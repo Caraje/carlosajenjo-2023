@@ -1,10 +1,11 @@
 import MainLayout from 'components/layout/Main-layout'
-import style from 'src/styles/Home.module.css'
+import HomeSection from 'components/sections/Home'
+
 export default function Home() {
   return (
     <>
       <MainLayout language='esp'>
-        <main className={style.container}> </main>
+        <HomeSection />
       </MainLayout>
     </>
   )
