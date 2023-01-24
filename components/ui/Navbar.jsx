@@ -6,13 +6,21 @@ import { sections } from 'utils/sections'
 import style from 'src/styles/Navbar.module.css'
 
 const Navbar = ({ theme, lang }) => {
-  console.log(sections)
   return (
     <div className={style.navbar}>
-      <Image src='/img_static/logos/logo-dark.svg' width={200} height={100} />
+      <Image
+        src='/img_static/logos/logo-dark.svg'
+        alt='Logo Carlosajenjo.es'
+        width={200}
+        height={100}
+      />
       <nav className={style.menu}>
         {sections.map((sec) => {
-          return <a href={sec.url}>{sec.title}</a>
+          return (
+            <a key={sec.title} href={sec.url}>
+              {sec.title}
+            </a>
+          )
         })}
         <button>Contacto</button>
       </nav>
@@ -29,12 +37,14 @@ const Navbar = ({ theme, lang }) => {
           {lang ? (
             <Image
               src='/img_static/icons/en-Icon.webp'
+              alt='Icono idioma en ingles'
               width={50}
               height={50}
             />
           ) : (
             <Image
               src='/img_static/icons/es-Icon.webp'
+              alt='Icono idioma en español'
               width={50}
               height={50}
             />
