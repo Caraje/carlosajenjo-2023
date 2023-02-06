@@ -1,10 +1,15 @@
 .navbar {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
+  position: fixed;
+  /* position: fixed; */
+  top:0;
+  z-index: 1;
+  width: 99%;
   display: flex;
   justify-content: space-around;
   align-items: center;  
+  backdrop-filter: blur(10px) brightness(.95);
+  filter: brightness();
+
 }
 .menu {
   color: var(--primary);
