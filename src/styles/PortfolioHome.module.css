@@ -1,0 +1,45 @@
+.portfolioHomeContainer {
+  /* background-color: aqua; */
+  max-width: 1200px;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.titlePortfolio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.titlePortfolio  h2 {
+  font-size: 3rem;
+  flex-grow: 1;
+  line-height: .5;
+  margin-bottom: 3rem;
+  font-family: var(--highlightFont);
+}
+
+
+.titlePortfolio h2::after {
+  content: " ";
+  display: inline-block;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  /* width: 100%; */
+  background-color: var(--highlight);
+}
+
+.portfolioGrid {
+  /* margin-top: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0 auto;
+}

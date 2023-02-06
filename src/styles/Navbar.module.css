@@ -1,12 +1,10 @@
 .navbar {
   position: absolute;
   z-index: 10;
-  /* background-color: var(--highlight); */
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;  
-  height: 5rem;
 }
 .menu {
   color: var(--primary);
@@ -22,22 +20,23 @@
 
 .menu a:hover {
   cursor: pointer;
-  color: var(--highlight);
-  transform: scale(1.2);
+  /* color: var(--highlight); */
+  transform: scale(1.1);
   text-shadow: 0 0 10px var(--highlight);
+  filter: brightness(1.2);
 }
 
-.menu button:hover{
-  /* color: var(--highlight); */
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: 0 0 10px var(--highlight);
-}
 .menu button{
   background-color: var(--highlight);
   color: var(--text);
   padding: .2rem 0.5rem;
   border-radius: 50px;
+}
+.menu button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--highlight);
+  filter: brightness(1.2);
 }
 
 .selections {
@@ -52,9 +51,6 @@
 
 .selections button:hover {
   cursor: pointer;
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 10px var(--highlight));
-  /* transition: all 0.3s ease-in-out; */
-
-  
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--highlight)) brightness(1.2);
 }

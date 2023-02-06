@@ -1,0 +1,50 @@
+.aboutContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImage {
+
+  margin-right: 3rem;
+
+}
+.aboutImage img{
+  max-width: 25rem;
+  object-fit: cover;
+  box-shadow: -1.1rem 1.1rem 0 var(--highlight);
+  border-radius: 5px;
+}
+
+.AboutTextContainer {
+/* background-color: indigo; */
+  max-width: 75ch;
+}
+
+.AboutTextTitle h2{
+  font-size: 3rem;
+  flex-grow: 1;
+  line-height: .5;
+  margin-bottom: 1.5rem;
+  font-family: var(--highlightFont);
+}
+
+.AboutTextTitle h2::after {
+  content: " ";
+  display: inline-block;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  background-color: var(--highlight);
+}
+
+.aboutTextGroup {
+  font-size: 1rem;
+  font-family: var(--primaryFont);
+}
+
+.aboutTextGroup p {
+  margin: 1rem 0;
+}
