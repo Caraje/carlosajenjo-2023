@@ -30,6 +30,7 @@
   filter: brightness(1.2);
 }
 
+
 .selections {
   display: flex;
   gap: 1rem;
@@ -37,7 +38,7 @@
 
 .selections button {
   transition: all 0.3s ease-in-out;
-
+  
 }
 
 .selections button:hover {
@@ -45,3 +46,8 @@
   transform: scale(1.1);
   filter: drop-shadow(0 0 10px var(--highlight)) brightness(1.2);
 } 
+.selections button img {
+  /* width: 3rem; */
+  height: 2.5rem;
+  object-fit: contain;
+}
