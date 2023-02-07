@@ -1,3 +1,4 @@
+import FooterWeb from 'components/sections/FooterWeb'
 import Navbar from 'components/ui/Navbar'
 import Head from 'next/head'
 import seoEn from '../../utils/lang/seo_en_EN.json'
@@ -35,7 +36,7 @@ const MainLayout = ({ children, language, isMobile }) => {
         <Navbar isMobile={isMobile} />
       </header>
       <>{children}</>
-      {/* <footer>Aqui va el footer</footer> */}
+      {<FooterWeb />}
     </>
   )
 }
