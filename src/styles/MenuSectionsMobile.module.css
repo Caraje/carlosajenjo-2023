@@ -1,27 +1,24 @@
 
 .menuMobileContainer {
 
-  /* background-color: transparent; */
   position: fixed;
   background-color: var(--secondary);
-  /* background-color: var(--highlight); */
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .menu {
   color: var(--primary);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 2rem;
   width: 20rem;
   margin-top: 3rem;
-  /* background-color: aqua; */
 }
 
 .menu a, .menu button{
@@ -49,8 +46,6 @@
   width: 85%;
   height: 1px;
   background-color: var(--highlight);
-  /* margin-top: 0.5rem; */
-
 }
 
 .menu button{
