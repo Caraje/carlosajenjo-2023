@@ -1,0 +1,47 @@
+.menu {
+  color: var(--primary);
+  display: flex;
+  gap: 2rem
+}
+
+.menu a, .menu button{
+  font-size: 1.5rem;
+  font-weight: var(--fontTitles);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px var(--highlight);
+  filter: brightness(1.2);
+}
+
+.menu button{
+  background-color: var(--highlight);
+  color: var(--text);
+  padding: .2rem 0.5rem;
+  border-radius: 50px;
+}
+.menu button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--highlight);
+  filter: brightness(1.2);
+}
+
+.selections {
+  display: flex;
+  gap: 1rem;
+}
+
+.selections button {
+  transition: all 0.3s ease-in-out;
+
+}
+
+.selections button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--highlight)) brightness(1.2);
+} 

@@ -1,60 +1,27 @@
 .navbar {
   position: fixed;
   top:0;
-  z-index: 1;
+  z-index: 20;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around ;
   align-items: center;  
   backdrop-filter: blur(10px) brightness(.95);
   filter: brightness();
-
-}
-.menu {
-  color: var(--primary);
-  display: flex;
-  gap: 2rem
 }
 
-.menu a, .menu button{
-  font-size: 1.5rem;
-  font-weight: var(--fontTitles);
-  transition: all 0.3s ease-in-out;
-}
-
-.menu a:hover {
-  cursor: pointer;
-  /* color: var(--highlight); */
-  transform: scale(1.1);
-  text-shadow: 0 0 10px var(--highlight);
-  filter: brightness(1.2);
-}
-
-.menu button{
-  background-color: var(--highlight);
+.navbar button{
   color: var(--text);
   padding: .2rem 0.5rem;
   border-radius: 50px;
+
 }
-.menu button:hover{
+.navbar button:hover{
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 0 0 10px var(--highlight);
-  filter: brightness(1.2);
+  filter: brightness(1.2) drop-shadow(0 0 10px var(--highlight));
 }
 
-.selections {
-  display: flex;
-  gap: 1rem;
-}
-
-.selections button {
-  transition: all 0.3s ease-in-out;
-
-}
-
-.selections button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px var(--highlight)) brightness(1.2);
+.navbar button img {
+  max-width: 30px;
 }

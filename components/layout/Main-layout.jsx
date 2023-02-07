@@ -3,7 +3,7 @@ import Head from 'next/head'
 import seoEn from '../../utils/lang/seo_en_EN.json'
 import seoEs from '../../utils/lang/seo_es_ES.json'
 
-const MainLayout = ({ children, language }) => {
+const MainLayout = ({ children, language, isMobile }) => {
   const lang = language === 'esp' ? seoEs : seoEn
 
   return (
@@ -32,10 +32,10 @@ const MainLayout = ({ children, language }) => {
         <meta name='twitter:image' content={lang.img} />
       </Head>
       <header>
-        <Navbar />
+        <Navbar isMobile={isMobile} />
       </header>
       <>{children}</>
-      <footer>Aqui va el footer</footer>
+      {/* <footer>Aqui va el footer</footer> */}
     </>
   )
 }

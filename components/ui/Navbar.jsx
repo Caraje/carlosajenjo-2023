@@ -1,57 +1,39 @@
-import DarkIcon from 'components/icons/Dark-icon'
-import LightTheme from 'components/icons/Light-icon'
+import MenuModal from 'components/sections/MenuModal'
 import Image from 'next/image'
-import React from 'react'
-import { sections } from 'utils/sections'
+import React, { useRef, useState } from 'react'
 import style from 'src/styles/Navbar.module.css'
+import MenuSections from './MenuSections'
 
-const Navbar = ({ theme, lang }) => {
+const Navbar = ({ theme, lang, isMobile }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <div className={style.navbar}>
-      <Image
-        src='/img_static/logos/logo-dark.svg'
-        alt='Logo Carlosajenjo.es'
-        width={200}
-        height={100}
-      />
-      <nav className={style.menu}>
-        {sections.map((sec) => {
-          return (
-            <a key={sec.title} href={sec.url}>
-              {sec.title}
-            </a>
-          )
-        })}
-        <button>Contacto</button>
-      </nav>
-      <div className={style.selections}>
-        <button>
-          {theme ? (
-            <DarkIcon color='#ed1e79' />
-          ) : (
-            <LightTheme color='#ed1e79' />
-          )}
-        </button>
-
-        <button>
-          {lang ? (
+    <>
+      <div className={style.navbar}>
+        <Image
+          src='/img_static/logos/logo-dark.svg'
+          alt='Logo Carlosajenjo.es'
+          width={200}
+          height={100}
+        />
+        {isMobile ? (
+          <button>
             <Image
-              src='/img_static/icons/en-Icon.webp'
-              alt='Icono idioma en ingles'
-              width={50}
-              height={50}
+              src='/img_static/icons/menu_icon.svg'
+              alt='Icono de despliegue del menu'
+              width={200}
+              height={100}
+              onClick={() => {
+                setIsOpen(!isOpen)
+              }}
             />
-          ) : (
-            <Image
-              src='/img_static/icons/es-Icon.webp'
-              alt='Icono idioma en español'
-              width={50}
-              height={50}
-            />
-          )}
-        </button>
+          </button>
+        ) : (
+          <MenuSections theme={theme} lang={lang} isOpen={setIsOpen} />
+        )}
       </div>
-    </div>
+      {isOpen && <MenuModal setIsOpen={setIsOpen} />}
+    </>
   )
 }
 

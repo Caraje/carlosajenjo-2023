@@ -11,7 +11,7 @@ const PortfolioHome = () => {
       </header>
       <section className={style.portfolioGrid}>
         {db.portfolio.map((card) => (
-          <PortfolioCard card={card} />
+          <PortfolioCard key={card.id} card={card} />
         ))}
       </section>
     </section>

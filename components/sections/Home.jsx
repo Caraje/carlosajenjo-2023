@@ -1,4 +1,4 @@
-import Icons from 'components/icons/icons'
+import Icons from 'components/icons/Icons'
 import Image from 'next/image'
 import React from 'react'
 import style from 'src/styles/Home.module.css'
