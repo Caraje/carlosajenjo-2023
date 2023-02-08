@@ -8,17 +8,16 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
   const { width, height } = useWindowDimensions()
-  console.log({ width })
   useEffect(() => {
-    width < 768 ? setIsMobile(true) : setIsMobile(false)
+    width < 911 ? setIsMobile(true) : setIsMobile(false)
   }, [width])
 
   return (
     <>
       <MainLayout isMobile={isMobile} language='esp'>
-        {/* <HomeSection /> */}
+        <HomeSection />
         {/* <PortfolioHome /> */}
-        {/* <AboutMe /> */}
+        <AboutMe />
       </MainLayout>
     </>
   )
