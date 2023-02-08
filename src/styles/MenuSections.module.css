@@ -1,7 +1,17 @@
+.menuContainer {
+  display: flex;
+
+  /* flex-grow: 1; */
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
 .menu {
   color: var(--primary);
   display: flex;
-  gap: 2rem
+  gap: 1.5rem
 }
 
 .menu a, .menu button{
@@ -33,7 +43,7 @@
 
 .selections {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .selections button {

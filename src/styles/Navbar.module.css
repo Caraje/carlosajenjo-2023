@@ -4,10 +4,13 @@
   z-index: 20;
   width: 100%;
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-evenly ;
   align-items: center;  
   backdrop-filter: blur(10px) brightness(.95);
   filter: brightness();
+}
+.navbar img {
+  flex-wrap: 1;
 }
 
 .navbar button{
@@ -24,4 +27,11 @@
 
 .navbar button img {
   max-width: 30px;
+
+}
+
+
+.logo {
+  flex-wrap: 1;
+  width: 30rem;
 }
