@@ -3,16 +3,13 @@ import style from 'src/styles/FooterWeb.module.css'
 import { socialNetworks } from 'utils/networks'
 import Icons from 'components/icons/Icons'
 import Image from 'next/image'
+import SocialNetworks from 'components/ui/SocialNetworks'
 const FooterWeb = () => {
   return (
     <footer className={style.footerWeb}>
       <section className={style.containerFooter}>
         <div className={style.socialIcons}>
-          {socialNetworks.map((soc) => (
-            <a key={soc.name} href={soc.url}>
-              {<Icons icon={soc.icon} color='#ededed' />}
-            </a>
-          ))}
+          {<SocialNetworks color='#ededed' />}
         </div>
         <div>
           <Image

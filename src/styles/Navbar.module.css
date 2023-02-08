@@ -27,6 +27,8 @@
 
 .navbar button img {
   max-width: 30px;
+  height: auto;
+  width: auto;
 
 }
 

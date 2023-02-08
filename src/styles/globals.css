@@ -12,7 +12,8 @@ body {
   height: 100vh;
   background-color: var(--secondary);
   font-family: var(--primaryFont);
-  color: var(--text)
+  color: var(--text);
+  font-size: 1rem;
 }
 
 a {

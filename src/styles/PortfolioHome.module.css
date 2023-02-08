@@ -1,5 +1,4 @@
 .portfolioHomeContainer {
-  /* background-color: aqua; */
   max-width: 1200px;
   margin: 6rem auto;
   display: flex;
@@ -11,9 +10,8 @@
 
 .titlePortfolio {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
-  /* background-color: blueviolet; */
 }
 
 .titlePortfolio  h2 {
@@ -31,12 +29,10 @@
   border-radius: 5px;
   height: 5px;
   width: 100%;
-  /* width: 100%; */
   background-color: var(--highlight);
 }
 
 .portfolioGrid {
-  /* margin-top: 2rem; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;

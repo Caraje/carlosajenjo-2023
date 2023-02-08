@@ -9,9 +9,9 @@
 .homeContainer {
   position: relative;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: start;
+  align-items:center;
   gap: 1.5rem;
   max-width: 1200px;
   height: 100%;
@@ -70,7 +70,7 @@
 }
 
 .HomePicture {
-  position: absolute;
+  /* position: absolute; */
   max-width: 50rem;
   bottom: 0;
   right: 0;
@@ -79,4 +79,7 @@
 
 .HomePicture img{
 object-fit: cover;
+border-radius: 100%;
+border-bottom: 5px solid var(--highlight);
+border-right: 2px solid var(--highlight);
 }
