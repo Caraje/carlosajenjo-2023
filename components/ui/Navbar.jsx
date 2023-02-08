@@ -1,8 +1,7 @@
-import MenuModal from 'components/sections/MenuModal'
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import style from 'src/styles/Navbar.module.css'
-import MenuSections from './MenuSections'
+import Menu from './Menu'
 
 const Navbar = ({ theme, lang, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,22 +16,23 @@ const Navbar = ({ theme, lang, isMobile }) => {
           height={100}
         />
         {isMobile ? (
-          <button>
+          <button
+            onClick={() => {
+              setIsOpen(!isOpen)
+            }}
+          >
             <Image
               src='/img_static/icons/menu_icon.svg'
               alt='Icono de despliegue del menu'
               width={200}
               height={100}
-              onClick={() => {
-                setIsOpen(!isOpen)
-              }}
             />
           </button>
         ) : (
-          <MenuSections theme={theme} lang={lang} isOpen={setIsOpen} />
+          <Menu theme={theme} lang={lang} isMobile={false} />
         )}
       </div>
-      {isOpen && <MenuModal setIsOpen={setIsOpen} />}
+      {isOpen && <Menu theme={theme} lang={lang} isMobile={true} />}
     </>
   )
 }
