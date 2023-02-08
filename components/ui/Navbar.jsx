@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import style from 'src/styles/Navbar.module.css'
 import Menu from './Menu'
+import menuIcon from '../../public/img_static/icons/menu_icon.svg'
 
 const Navbar = ({ theme, lang, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,12 +22,7 @@ const Navbar = ({ theme, lang, isMobile }) => {
               setIsOpen(!isOpen)
             }}
           >
-            <Image
-              src='/img_static/icons/menu_icon.svg'
-              alt='Icono de despliegue del menu'
-              width={200}
-              height={100}
-            />
+            <Image src={menuIcon} alt='Icono de despliegue del menu' />
           </button>
         ) : (
           <Menu theme={theme} lang={lang} isMobile={false} />
