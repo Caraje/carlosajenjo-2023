@@ -17,8 +17,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 20rem;
+  width: 90%;
   margin-top: 3rem;
+  padding: 2rem;
 }
 
 .menu a, .menu button{
@@ -27,10 +28,6 @@
   font-weight: var(--fontTitles);
   transition: all 0.3s ease-in-out;
 }
-
-
-
-
 
 .menu a:hover {
   cursor: pointer;
@@ -53,6 +50,8 @@
   color: var(--text);
   padding: .2rem 0.5rem;
   border-radius: 50px;
+  margin: 0 auto;
+  width: 90%;
 }
 .menu button:hover{
   cursor: pointer;
