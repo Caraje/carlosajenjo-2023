@@ -1,7 +1,5 @@
 import React from 'react'
 import style from 'src/styles/FooterWeb.module.css'
-import { socialNetworks } from 'utils/networks'
-import Icons from 'components/icons/Icons'
 import Image from 'next/image'
 import SocialNetworks from 'components/ui/SocialNetworks'
 const FooterWeb = () => {
