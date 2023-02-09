@@ -8,11 +8,9 @@ const AboutMe = () => {
   return (
     <section className={style.aboutContainer}>
       <picture className={style.aboutImage}>
-        <Image
+        <img
           src='/img_static/carlosAbout.webp'
           alt={`Es una imagen que hace referencia a Carlos Ajenjo`}
-          width={500}
-          height={500}
         />
       </picture>
       <article className={style.AboutTextContainer}>
