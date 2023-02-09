@@ -16,8 +16,8 @@ export default function Home() {
     <>
       <MainLayout isMobile={isMobile} language='esp'>
         <HomeSection />
-        {/* <PortfolioHome /> */}
-        <AboutMe />
+        <PortfolioHome />
+        {/* <AboutMe /> */}
       </MainLayout>
     </>
   )

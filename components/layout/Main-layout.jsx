@@ -36,7 +36,7 @@ const MainLayout = ({ children, language, isMobile }) => {
         <Navbar isMobile={isMobile} />
       </header>
       <>{children}</>
-      {<FooterWeb />}
+      {/* {<FooterWeb />} */}
     </>
   )
 }

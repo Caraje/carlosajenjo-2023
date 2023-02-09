@@ -1,61 +1,47 @@
-.cardContainer  {
-  position: relative;
-  max-width: 25rem;
+.cardContainer {
+  width: 15rem;
+  background-color: var(--highlight);
+  max-height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .3s ease-in-out;
-
-  
+  border-radius: 5px;
+  background-color: darkgoldenrod;
 }
 
-.cardContainer:hover{
-  box-shadow: 0 0 15px var(--highlight);
-  cursor: pointer;
-  transform: scale(1.02);
-  
-}
 
 .cardTitles {
   display: flex;
-  position: absolute;
+  display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.cardTitles h2 {
+  font-family: var(--highlightFont);
+  font-size: 2rem;
+}
+
+.cardTitles  {
+  font-size: 1rem;
   text-align: center;
-  background-color: rgba(237,31,120, .8);
-  height: 100%;
-  overflow: hidden;
-  backdrop-filter: blur(10px) brightness(1.2) ;
-  transition: all .3s ease-in-out;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 1rem;
-  opacity: 0;
-  }
+}
 
-  .cardTitles:hover{
-    filter: brightness(1.2) contrast(1.8);
-
-    opacity: 100%;
-
-  }
-
-  .cardTitles h2 {
-    font-size: 2rem;
-    font-family: var(--highlightFont);
-    margin-bottom: 1rem;
-
-  }
 
 
 .cardImage {
-  /* position: absolute; */
-  line-height: 0;
-  border-radius: 5px;
-  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
 }
 
 .cardImage img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  
+  overflow: hidden;
+  border-radius: 5px;
+  line-height: 0;
 }
