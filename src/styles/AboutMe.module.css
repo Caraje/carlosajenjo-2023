@@ -1,25 +1,45 @@
 .aboutContainer {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
+
+@media (min-width: 911px) {
+  .aboutContainer {
+    flex-direction: row;
+    padding: 2rem;
+  }
+}
+
 
 .aboutImage {
-
-  margin-right: 3rem;
-
+  margin: 0 auto;
+  width: 75%;
 }
+
 .aboutImage img{
-  max-width: 25rem;
+  max-width: 100%;
   object-fit: cover;
-  box-shadow: -1.1rem 1.1rem 0 var(--highlight);
+  box-shadow: -0.5rem .5rem 0 var(--highlight);
   border-radius: 5px;
 }
+@media (min-width: 911px) {
+
+  .aboutImage img{
+  box-shadow: -1.1rem 1.1rem 0 var(--highlight);
+
+  }
+}
+
 
 .AboutTextContainer {
-/* background-color: indigo; */
+
+  /* margin-top: 3rem; */
+  padding: 1rem;
   max-width: 75ch;
 }
 
@@ -47,4 +67,4 @@
 
 .aboutTextGroup p {
   margin: 1rem 0;
-}
+} 
