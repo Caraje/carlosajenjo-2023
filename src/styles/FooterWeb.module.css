@@ -1,27 +1,39 @@
 .footerWeb {
-  /* height: 3rem; */
   margin-top: 3rem;
   width: 100%;
   background-color: var(--highlight);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
 }
 
 .containerFooter {
-  /* background-color: aqua; */
+
   margin: 1rem 0;
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (min-width: 911px) {
+  .containerFooter {
+    flex-direction: row;
+  }
 }
 
 .socialIcons {
   display: flex;
   gap: 1rem;
   margin: 0;
+  zoom: .7;
+}
+
+@media (min-width: 911px) {
+  .socialIcons {
+    zoom: 0;
+  }
 }
 
 .socialIcons a {
