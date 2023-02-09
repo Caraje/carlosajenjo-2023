@@ -17,7 +17,7 @@ export const db = {
       techList: ['HTML', 'CSS', 'Javascript', 'React', 'Next-js'],
       urlGit: 'https://github.com/Caraje/dadosypixeles',
       urlDemo: 'https://www.dadosypixeles.es',
-      spotlight: true,
+      front: true,
     },
     {
       id: '02',
@@ -35,7 +35,7 @@ export const db = {
       url: '/portfolio/answer-for-developers',
       urlGit: 'https://github.com/Caraje/Anwser-for-Developers',
       urlDemo: 'https://answer-for-developers.vercel.app/',
-      spotlight: true,
+      front: true,
     },
 
     {
@@ -55,7 +55,7 @@ export const db = {
       url: '/portfolio/gifapp',
       urlGit: 'https://github.com/Caraje/gifsApp',
       urlDemo: 'https://caraje.github.io/gifsApp/',
-      spotlight: false,
+      front: false,
     },
     {
       id: '04',
@@ -74,7 +74,7 @@ export const db = {
       url: '/portfolio/blackjack',
       urlGit: 'https://github.com/Caraje/BlackJack',
       urlDemo: 'https://blackjack-caraje.netlify.app/',
-      spotlight: false,
+      front: false,
     },
     {
       id: '05',
@@ -91,7 +91,7 @@ export const db = {
       url: '/portfolio/pokemon',
       urlGit: 'https://github.com/Caraje/pokemonApp',
       urlDemo: 'https://pokemon-app-indol.vercel.app/',
-      spotlight: false,
+      front: false,
     },
     {
       id: '06',
@@ -110,7 +110,7 @@ export const db = {
       url: '/portfolio/todoapp',
       urlGit: 'https://github.com/Caraje/Todo-Js-Vanilla',
       urlDemo: 'https://caraje.github.io/Todo-Js-Vanilla/',
-      spotlight: true,
+      front: true,
     },
     {
       id: '07',
@@ -129,7 +129,7 @@ export const db = {
       url: '/portfolio/emparejados',
       urlGit: 'https://github.com/Caraje/Emparejados',
       urlDemo: 'https://caraje.github.io/Emparejados/',
-      spotlight: true,
+      front: true,
     },
     {
       id: '08',
@@ -150,7 +150,7 @@ export const db = {
       url: '/portfolio/calendario',
       urlGit: 'https://github.com/Caraje/CalenadarApp',
       urlDemo: 'https://calendar-app-back.vercel.app/',
-      spotlight: false,
+      front: false,
     },
     {
       id: '09',
@@ -169,7 +169,7 @@ export const db = {
       url: '/portfolio/CarlosAjenjo(V1)',
       urlGit: 'https://github.com/Caraje/carlosajenjo.com',
       urlDemo: 'https://carlosajenjo-com.vercel.app/#/',
-      spotlight: false,
+      front: false,
     },
   ],
 }
