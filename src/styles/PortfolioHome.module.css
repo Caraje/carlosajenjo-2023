@@ -46,3 +46,26 @@
   max-width: 100%;
 
 } 
+
+.btnMore {
+  width: fit-content;
+  background-color: var(--highlight);
+  line-height: 0;
+  padding: .8rem 1rem;
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  border-radius: 15px ;
+  margin: 2rem auto;
+  transition: all .3s ease-in-out;
+
+
+}
+
+
+.btnMore:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 15px var(--highlight)) brightness(1.2);
+  transform: scale(1.1);
+
+
+}

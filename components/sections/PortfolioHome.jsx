@@ -10,10 +10,18 @@ const PortfolioHome = () => {
         <h2>Portfolio</h2>
       </header>
       <section className={style.portfolioGrid}>
-        {db.portfolio.map((card) => (
-          <PortfolioCard key={card.id} card={card} />
-        ))}
+        {db.portfolio
+          .sort((a, b) => b.id - a.id)
+          .slice(0, 8)
+          .map((card) => (
+            <PortfolioCard key={card.id} card={card} />
+          ))}
       </section>
+      {db.portfolio.length > 8 && (
+        <a className={style.btnMore} href='#'>
+          Ver Más
+        </a>
+      )}
     </section>
   )
 }
