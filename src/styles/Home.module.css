@@ -98,7 +98,17 @@
 
 .homeSocialNetworksGroup a {
   zoom: 0.7;
+  transition: all .3s ease-in-out;
 }
+
+.homeSocialNetworksGroup a:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 15px var(--highlight)) brightness(1.2);
+  transform: scale(1.2);
+
+}
+
+
 @media (min-width: 911px) {
   .homeSocialNetworksGroup{
     display: flex;
@@ -119,6 +129,15 @@
   color: var(--primary);
   border-radius: 15px;
   line-height: 0;
+  transition: all .3s ease-in-out;
+
+
+}
+
+.btnContact:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 15px var(--highlight)) brightness(1.2);
+  transform: scale(1.1);
 
 }
 
