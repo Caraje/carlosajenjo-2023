@@ -5,7 +5,7 @@ import style from 'src/styles/PortfolioHome.module.css'
 
 const PortfolioHome = () => {
   return (
-    <section className={style.portfolioHomeContainer}>
+    <section id='portfolio' className={style.portfolioHomeContainer}>
       <header className={style.titlePortfolio}>
         <h2>Portfolio</h2>
       </header>
@@ -18,7 +18,7 @@ const PortfolioHome = () => {
           ))}
       </section>
       {db.portfolio.length > 8 && (
-        <a className={style.btnMore} href='#'>
+        <a className={style.btnMore} href='/portfolio'>
           Ver Más
         </a>
       )}

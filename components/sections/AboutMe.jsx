@@ -6,7 +6,7 @@ import style from 'src/styles/AboutMe.module.css'
 const AboutMe = () => {
   // 716  898
   return (
-    <section className={style.aboutContainer}>
+    <section id='aboutme' className={style.aboutContainer}>
       <picture className={style.aboutImage}>
         <img
           src='/img_static/carlosAbout.webp'
