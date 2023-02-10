@@ -11,7 +11,7 @@ const Menu = ({ theme, lang, setIsOpen, isMobile }) => {
       className={isMobile ? mobile.menuMobileContainer : desktop.menuContainer}
     >
       <nav className={isMobile ? mobile.menu : desktop.menu}>
-        {<SectionsMenu />}
+        {<SectionsMenu setIsOpen={setIsOpen} />}
         <button>Contacto</button>
       </nav>
       <div className={isMobile ? mobile.selections : desktop.selections}>

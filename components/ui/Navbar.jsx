@@ -31,7 +31,12 @@ const Navbar = ({ theme, lang, isMobile }) => {
             </button>
           ) : (
             <section className={style.menuContainer}>
-              <Menu theme={theme} lang={lang} isMobile={false} />
+              <Menu
+                theme={theme}
+                lang={lang}
+                isMobile={false}
+                setIsOpen={setIsOpen}
+              />
             </section>
           )}
         </div>

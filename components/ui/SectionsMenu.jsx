@@ -1,7 +1,7 @@
 import React from 'react'
 import { sections } from 'utils/sections'
 
-const SectionsMenu = () => {
+const SectionsMenu = ({ setIsOpen }) => {
   return sections.map((sec) => {
     return (
       <a
