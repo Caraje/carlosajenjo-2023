@@ -1,11 +1,18 @@
 import FooterWeb from 'components/sections/FooterWeb'
 import Navbar from 'components/ui/Navbar'
+import useWindowDimensions from 'hooks/useWindowDimension'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 import seoEn from '../../utils/lang/seo_en_EN.json'
 import seoEs from '../../utils/lang/seo_es_ES.json'
 
-const MainLayout = ({ children, language, isMobile }) => {
+const MainLayout = ({ children, language }) => {
   const lang = language === 'esp' ? seoEs : seoEn
+  const [isMobile, setIsMobile] = useState(false)
+  const { width, height } = useWindowDimensions()
+  useEffect(() => {
+    width < 764 ? setIsMobile(true) : setIsMobile(false)
+  }, [width])
 
   return (
     <>
