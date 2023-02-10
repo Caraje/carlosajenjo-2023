@@ -9,7 +9,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
   const { width, height } = useWindowDimensions()
   useEffect(() => {
-    width < 911 ? setIsMobile(true) : setIsMobile(false)
+    width < 764 ? setIsMobile(true) : setIsMobile(false)
   }, [width])
 
   return (
