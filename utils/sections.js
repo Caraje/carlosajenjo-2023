@@ -1,8 +1,8 @@
 export const sections = [
-  {
-    title: 'Home',
-    url: '/',
-  },
+  // {
+  //   title: 'Home',
+  //   url: '/',
+  // },
   {
     title: 'Portfolio',
     url: '/#portfolio',
