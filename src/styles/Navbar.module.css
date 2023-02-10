@@ -2,35 +2,68 @@
   position: fixed;
   top:0;
   z-index: 20;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly ;
-  align-items: center;  
+  width: 100%; 
   backdrop-filter: blur(10px) brightness(.95);
-  filter: brightness();
-}
-.navbar img {
-  flex-wrap: 1;
 }
 
-.navbar button{
+.containerNavbar{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center; 
+  margin: 0 auto;
+}
+
+.logoContainer {
+  position: relative;
+  height: 3rem;
+  width: 15rem;
+}
+
+
+@media (min-width: 764px) {
+  .logoContainer {
+    height: 5rem;
+    max-width: 15rem 
+  }
+}
+
+.logoimg{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.menuContainer{
+  flex-grow: 1;
+}
+
+
+.btnMenuMobile {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* .navbar button{
   color: var(--text);
   padding: .2rem 0.5rem;
   border-radius: 50px;
-
-}
-.navbar button:hover{
+  
+} */
+/* .navbar button:hover{
   cursor: pointer;
   transform: scale(1.1);
   filter: brightness(1.2) drop-shadow(0 0 10px var(--highlight));
-}
+} */
 
-.navbar button img {
+/* .navbar button img {
+  margin: 0;
   max-width: 35px;
-}
+} */
 
 
-.logo {
+/* .logo {
   flex-wrap: 1;
   width: 30rem;
-}
+} */

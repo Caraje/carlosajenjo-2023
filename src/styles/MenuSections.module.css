@@ -1,11 +1,9 @@
 .menuContainer {
   display: flex;
-
-  /* flex-grow: 1; */
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  /* background-color: aqua; */
+
 }
 
 .menu {
@@ -15,9 +13,10 @@
 }
 
 .menu a, .menu button{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: var(--fontTitles);
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .menu a:hover {
@@ -43,7 +42,6 @@
 
 .selections {
   display: flex;
-  /* gap: 1rem; */
 }
 
 .selections button {
@@ -57,7 +55,6 @@
   filter: drop-shadow(0 0 10px var(--highlight)) brightness(1.2);
 } 
 .selections button img {
-  /* width: 3rem; */
   height: 2.5rem;
   object-fit: contain;
 }
