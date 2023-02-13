@@ -63,7 +63,11 @@ const WorkPage = ({ work, isMobile }) => {
 
 // DEFINIR EL getStaticPath
 export const getStaticPaths = async (ctx) => {
-  const worksNames = db.portfolio.map((work) => work.title)
+  const worksNames = db.portfolio.map((work) =>
+    work.title.toLocaleLowerCase().replaceAll(' ', '-')
+  )
+  console.log({ worksNames })
+
   return {
     paths: worksNames.map((name) => ({
       params: { name },
@@ -74,12 +78,8 @@ export const getStaticPaths = async (ctx) => {
 
 export const getStaticProps = async ({ params }) => {
   const { name } = params
-  console.log({ name })
-
-  // const work = db.portfolio.filter((work) => work.slug === name)
   const work = db.portfolio.filter((work) => {
     const data = work.title.toLocaleLowerCase().replaceAll(' ', '-')
-    console.log('=>', data)
     return data === name
   })
 
