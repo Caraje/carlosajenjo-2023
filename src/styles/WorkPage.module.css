@@ -1,0 +1,49 @@
+.workBackground{
+  background-image: url('../../public/img_static/background_dark.svg');
+  background-size: cover;  
+}
+
+.workContainer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.workInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: brown;
+  width: 100%;
+
+}
+
+
+.workTitle{
+  font-size: 3rem;
+  font-family: var(--highlightFont);
+  width: 100%;
+  line-height: .2;
+  margin-bottom: 5rem;
+}
+
+.workTitle::after{
+  content: "";
+  display: inline-block;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  background-color: var(--highlight);
+}
+
+.infoContainer{
+  display: flex;
+  /* flex-direction: column; */
+  background-color:brown ;
+
+}
