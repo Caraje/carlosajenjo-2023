@@ -4,41 +4,54 @@ import Image from 'next/image'
 import style from 'src/styles/WorkPage.module.css'
 
 const WorkPage = ({ work, isMobile }) => {
-  console.log({ work })
-  console.log(work[0])
   const { id, title, img, description, techList, urlGit, urlDemo, slug } =
     work[0]
   return (
     <div className={style.workBackground}>
       <MainLayout isMobile={isMobile} language='esp'>
         <main className={style.workContainer}>
-          <Image
-            src={`https://res.cloudinary.com/caraje/image/upload/v1661251659/${img}`}
-            alt={`es la imagen de la cabecera del proyecto ${title}`}
-            width={1200}
-            height={200}
-          />
+          <picture className={style.image}>
+            <Image
+              src={`https://res.cloudinary.com/caraje/image/upload/v1661251659/${img}`}
+              alt={`es la imagen de la cabecera del proyecto ${title}`}
+              className={style.headImage}
+              width={1200}
+              height={800}
+            />
+          </picture>
           <article className={style.workInfo}>
             <h1 className={style.workTitle}>{title}</h1>
             <section className={style.infoContainer}>
-              <div>
-                <div>
+              <section className={style.textBox}>
+                <div className={style.desc}>
                   {description.map((desc, id) => (
                     <p key={id}>{desc}</p>
                   ))}
                 </div>
-                <section>contenedor de imagenes</section>
-              </div>
-              <aside>
-                <section>
-                  <h3>tecnoligias</h3>
-                  <ol>
+                <section className={style.photoBox}>
+                  contenedor de imagenes
+                </section>
+              </section>
+              <aside className={style.addInfo}>
+                <section className={style.seccTec}>
+                  <h3 className={style.seccTecTitle}>Tecnologias</h3>
+                  <ol className={style.seccTecList}>
                     {techList.map((tec, id) => (
-                      <li key={id}>{tec}</li>
+                      <li className={style.seccTecChip} key={id}>
+                        {tec}
+                      </li>
                     ))}
                   </ol>
                 </section>
-                <nav>Botones de navegacion</nav>
+                <nav className={style.navButtons}>
+                  <a href={urlDemo} target='_blank' rel='noreferrer'>
+                    Demo
+                  </a>
+                  <a href={urlGit} target='_blank' rel='noreferrer'>
+                    Github
+                  </a>
+                  <a href='/portfolio'>Volver</a>
+                </nav>
               </aside>
             </section>
           </article>
