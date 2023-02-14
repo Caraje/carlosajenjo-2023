@@ -27,7 +27,6 @@ export const db = {
         'Este proyecto fue creado para el Hackathon de Enero 2023 organizado por Midudev. Fue desarrollado con la tecnología de Inteligencia Artificial de Co:here.',
 
         'La propuesta consiste en que los usuarios puedan hacer preguntas sobre desarrollo web a la aplicación y recibir respuestas generadas por la IA de Co:here, basadas en su aprendizaje. Cuanto más detallada sea la pregunta, más clara será la respuesta generada.',
-        ,
       ],
       descShort:
         'Esto es una descripcion breve del trabajo dentro de cada proyecto hay una descripcion mas detallada',
