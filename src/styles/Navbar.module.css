@@ -44,26 +44,3 @@
   height: 2rem;
   width: 2rem;
 }
-
-/* .navbar button{
-  color: var(--text);
-  padding: .2rem 0.5rem;
-  border-radius: 50px;
-  
-} */
-/* .navbar button:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  filter: brightness(1.2) drop-shadow(0 0 10px var(--highlight));
-} */
-
-/* .navbar button img {
-  margin: 0;
-  max-width: 35px;
-} */
-
-
-/* .logo {
-  flex-wrap: 1;
-  width: 30rem;
-} */

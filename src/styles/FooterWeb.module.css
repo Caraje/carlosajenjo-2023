@@ -1,5 +1,4 @@
 .footerWeb {
-  /* margin-top: 3rem; */
   width: 100%;
   background-color: var(--highlight);
   display: flex;
@@ -17,7 +16,7 @@
   align-items: center;
 }
 
-@media (min-width: 911px) {
+@media (min-width: 764px) {
   .containerFooter {
     flex-direction: row;
   }
@@ -30,7 +29,7 @@
   zoom: .7;
 }
 
-@media (min-width: 911px) {
+@media (min-width: 764px) {
   .socialIcons {
     zoom: 0;
   }
