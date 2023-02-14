@@ -4,11 +4,7 @@ import style from 'src/styles/PortfolioCard.module.css'
 const PortfolioCard = ({ card }) => {
   return (
     <article className={style.cardContainer}>
-      <a
-        href={`/portfolio/${card.title
-          .toLocaleLowerCase()
-          .replaceAll(' ', '-')}`}
-      >
+      <a href={`${card.url.toLocaleLowerCase().replaceAll(' ', '-')}`}>
         <header className={style.cardTitles}>
           <h2>{card.title}</h2>
           <p>{card.descShort}</p>

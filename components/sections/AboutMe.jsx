@@ -1,7 +1,8 @@
-import { infoWebES } from 'data/infoWeb'
+import infoWebES from '../../data/infoWeb.json'
 import React from 'react'
 
 import style from 'src/styles/AboutMe.module.css'
+import uiWebES from '../../data/uiWeb.json'
 
 const AboutMe = () => {
   return (
@@ -14,7 +15,7 @@ const AboutMe = () => {
       </picture>
       <article className={style.AboutTextContainer}>
         <header className={style.AboutTextTitle}>
-          <h2>Sobre mi</h2>
+          <h2>{uiWebES.es_ES.home.titles.aboutMe}</h2>
         </header>
         <main className={style.aboutTextGroup}>
           {infoWebES.home.aboutMeText.map((el, id) => (

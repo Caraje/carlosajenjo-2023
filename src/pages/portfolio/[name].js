@@ -1,11 +1,13 @@
 import MainLayout from 'components/layout/Main-layout'
-import { db } from 'data/infoBase'
 import Image from 'next/image'
 import style from 'src/styles/WorkPage.module.css'
+import uiWebES from '../../../data/uiWeb.json'
+import infoWorks from '../../../data/infoWorks.json'
 
 const WorkPage = ({ work, isMobile }) => {
-  const { id, title, img, description, techList, urlGit, urlDemo, slug } =
+  const { id, title, img, description, techList, urlGit, urlDemo, images } =
     work[0]
+
   return (
     <div className={style.workBackground}>
       <MainLayout isMobile={isMobile} language='esp'>
@@ -28,13 +30,17 @@ const WorkPage = ({ work, isMobile }) => {
                     <p key={id}>{desc}</p>
                   ))}
                 </div>
-                <section className={style.photoBox}>
-                  contenedor de imagenes
-                </section>
+                {images.length !== 0 && (
+                  <section className={style.photoBox}>
+                    contenedor de imagenes
+                  </section>
+                )}
               </section>
               <aside className={style.addInfo}>
                 <section className={style.seccTec}>
-                  <h3 className={style.seccTecTitle}>Tecnologias</h3>
+                  <h3 className={style.seccTecTitle}>
+                    {uiWebES.es_ES.workPage.titles.tecnologies}
+                  </h3>
                   <ol className={style.seccTecList}>
                     {techList.map((tec, id) => (
                       <li className={style.seccTecChip} key={id}>
@@ -45,12 +51,12 @@ const WorkPage = ({ work, isMobile }) => {
                 </section>
                 <nav className={style.navButtons}>
                   <a href={urlDemo} target='_blank' rel='noreferrer'>
-                    Demo
+                    {uiWebES.es_ES.workPage.buttons.demo}
                   </a>
                   <a href={urlGit} target='_blank' rel='noreferrer'>
-                    Github
+                    {uiWebES.es_ES.workPage.buttons.github}
                   </a>
-                  <a href='/portfolio'>Volver</a>
+                  <a href='/portfolio'>{uiWebES.es_ES.workPage.buttons.back}</a>
                 </nav>
               </aside>
             </section>
@@ -63,11 +69,9 @@ const WorkPage = ({ work, isMobile }) => {
 
 // DEFINIR EL getStaticPath
 export const getStaticPaths = async (ctx) => {
-  const worksNames = db.portfolio.map((work) =>
+  const worksNames = infoWorks.es_ES.map((work) =>
     work.title.toLocaleLowerCase().replaceAll(' ', '-')
   )
-  console.log({ worksNames })
-
   return {
     paths: worksNames.map((name) => ({
       params: { name },
@@ -78,7 +82,7 @@ export const getStaticPaths = async (ctx) => {
 
 export const getStaticProps = async ({ params }) => {
   const { name } = params
-  const work = db.portfolio.filter((work) => {
+  const work = infoWorks.es_ES.filter((work) => {
     const data = work.title.toLocaleLowerCase().replaceAll(' ', '-')
     return data === name
   })

@@ -1,25 +1,27 @@
 import PortfolioCard from 'components/ui/PortfolioCard'
-import { db } from 'data/infoBase'
 import React from 'react'
 import style from 'src/styles/PortfolioHome.module.css'
+
+import uiWebES from '../../data/uiWeb.json'
+import infoWorks from '../../data/infoWorks.json'
 
 const PortfolioHome = () => {
   return (
     <section id='portfolio' className={style.portfolioHomeContainer}>
       <header className={style.titlePortfolio}>
-        <h2>Portfolio</h2>
+        <h2>{uiWebES.es_ES.home.titles.portfolio}</h2>
       </header>
       <section className={style.portfolioGrid}>
-        {db.portfolio
+        {infoWorks.es_ES
           .sort((a, b) => b.id - a.id)
           .slice(0, 8)
           .map((card) => (
             <PortfolioCard key={card.id} card={card} />
           ))}
       </section>
-      {db.portfolio.length > 8 && (
+      {infoWorks.es_ES.length > 8 && (
         <a className={style.btnMore} href='/portfolio'>
-          Ver Más
+          {uiWebES.es_ES.home.buttons.more}
         </a>
       )}
     </section>

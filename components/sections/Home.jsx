@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import style from 'src/styles/Home.module.css'
 import photoCarlos from '../../public/img_static/carlosFoto.webp'
+import uiWebES from '../../data/uiWeb.json'
 
 export const HomeSection = () => {
   return (
@@ -17,7 +18,9 @@ export const HomeSection = () => {
             {<SocialNetworks color='#ededed' />}
           </section>
 
-          <button className={style.btnContact}>Contacto</button>
+          <button className={style.btnContact}>
+            {uiWebES.es_ES.home.buttons.contact}
+          </button>
         </article>
 
         <picture className={style.HomePicture}>
