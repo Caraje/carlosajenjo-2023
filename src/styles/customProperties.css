@@ -61,7 +61,7 @@
     -----------------------------------------------------------------------
   */
 
-  --background: url('../../public/img_static/background_dark.svg');
+  --background: url('/img_static/background_dark.svg');
 }
 
 
@@ -92,7 +92,7 @@
     -----------------------------------------------------------------------
   */
 
-  --background: url('../../public/img_static/background_White.svg');
+  --background: url('/public/img_static/background_White.svg');
 
 
 }
