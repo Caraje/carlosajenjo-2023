@@ -5,7 +5,7 @@ export const sections = [
   // },
   {
     title: 'Portfolio',
-    url: '/#portfolio',
+    url: '/portfolio',
   },
   {
     title: 'Sobre mi',
