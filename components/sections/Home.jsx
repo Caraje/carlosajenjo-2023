@@ -15,7 +15,7 @@ export const HomeSection = () => {
           </h1>
 
           <section className={style.homeSocialNetworksGroup}>
-            {<SocialNetworks color='#ededed' />}
+            {<SocialNetworks color='#2d2d2d' />}
           </section>
 
           <button className={style.btnContact}>
