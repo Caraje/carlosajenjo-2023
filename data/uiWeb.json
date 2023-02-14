@@ -1,0 +1,28 @@
+{"es_ES":{
+  "home": {
+    "buttons": {
+      "contact": "Contacto",
+      "more": "Ver más"
+    },
+    "titles": {
+      "portfolio": "Portfolio",
+      "aboutMe": "Sobre mi"
+    }
+  },
+  "portfolioPage": {
+    "titles": {
+      "portfolio": "Portfolio"
+    }
+  },
+  "workPage": {
+    "titles": {
+      "tecnologies": "Tecnologías"
+    },
+    "buttons": {
+      "demo": "Demo",
+      "github": "Github",
+      "back": "Volver"
+    }
+  }
+}
+}
