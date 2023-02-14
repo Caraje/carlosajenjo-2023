@@ -18,7 +18,7 @@ const AboutMe = () => {
           <h2>{uiWebES.es_ES.home.titles.aboutMe}</h2>
         </header>
         <main className={style.aboutTextGroup}>
-          {infoWebES.home.aboutMeText.map((el, id) => (
+          {infoWebES.es_ES.home.aboutMeText.map((el, id) => (
             <p key={id}>{el}</p>
           ))}
         </main>

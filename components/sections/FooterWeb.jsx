@@ -20,7 +20,7 @@ const FooterWeb = () => {
           />
         </div>
       </section>
-      <div className={style.footerText}>{infoWebES.home.footer}</div>
+      <div className={style.footerText}>{infoWebES.es_ES.home.footer}</div>
     </footer>
   )
 }
