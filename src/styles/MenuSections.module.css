@@ -28,7 +28,7 @@
 
 .menu button{
   background-color: var(--highlight);
-  color: var(--text);
+  color: var(--textButton);
   padding: .2rem 0.5rem;
   border-radius: 50px;
 }

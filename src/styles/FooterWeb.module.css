@@ -48,6 +48,7 @@
 
 
 .footerText {
+  color: var(--textButton);
   text-align: center;
   font-size: 1rem;
   margin-bottom: 2rem;

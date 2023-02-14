@@ -1,6 +1,6 @@
 
 .portfolioBackground{
-  background-image: url('../../public/img_static/background_dark.svg');
+  background-image: var(--background);
   background-size: cover;  
 }
 
