@@ -1,13 +1,15 @@
 import SocialNetworks from 'components/ui/SocialNetworks'
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import style from 'src/styles/Home.module.css'
 import photoCarlos from '../../public/img_static/carlosFoto.webp'
 import uiWebES from '../../data/uiWeb.json'
 import Contact from './Contact'
+import { ThemeContext } from 'context/userContext'
 
 export const HomeSection = () => {
   const dialog = useRef(null)
+  const { theme, setTheme } = useContext(ThemeContext)
 
   return (
     <>
@@ -19,7 +21,7 @@ export const HomeSection = () => {
             </h1>
 
             <section className={style.homeSocialNetworksGroup}>
-              {<SocialNetworks color='#ededed' />}
+              {<SocialNetworks color={theme ? '#2d2d2d' : '#ededed'} />}
             </section>
 
             <button
