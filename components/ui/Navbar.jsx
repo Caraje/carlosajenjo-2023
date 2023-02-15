@@ -1,12 +1,14 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import style from 'src/styles/Navbar.module.css'
 import Menu from './Menu'
 import menuIcon from '../../public/img_static/icons/menu_icon.svg'
 import logo from '../../public/img_static/logos/logo-dark.svg'
+import Contact from 'components/sections/Contact'
 
 const Navbar = ({ theme, lang, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const dialog = useRef(null)
 
   return (
     <>
@@ -36,12 +38,16 @@ const Navbar = ({ theme, lang, isMobile }) => {
                 lang={lang}
                 isMobile={false}
                 setIsOpen={setIsOpen}
+                dialog={dialog}
               />
             </section>
           )}
         </div>
       </div>
       {isOpen && <Menu theme={theme} lang={lang} isMobile={true} />}
+      <dialog ref={dialog}>
+        <Contact dialog={dialog} />
+      </dialog>
     </>
   )
 }
