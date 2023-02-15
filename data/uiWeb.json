@@ -23,6 +23,20 @@
       "github": "Github",
       "back": "Volver"
     }
+  },
+  "contact":{
+    "buttons": {
+      "send": "Enviar"
+    },
+    "titles": "Contacto",
+    "form": {
+      "name" : "Nombre:",
+      "placeHolderName": "Carlos Ajenjo",
+      "email" : "Correo Electronico:",
+      "placeHolderEmail": "Carlos@correo.com",
+      "question" : "Haga su pregunta:",
+      "placeHolderQuestion": "Me interesaria hacerle una consulta sobre ..."
+    }
   }
 }
 }
