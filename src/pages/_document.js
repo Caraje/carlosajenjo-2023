@@ -2,7 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang='es' data-theme={false}>
+    <Html
+    // lang='es' data-theme={false}
+    >
       <Head>
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
