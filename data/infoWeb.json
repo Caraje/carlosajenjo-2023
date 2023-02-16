@@ -9,5 +9,17 @@
       "footer":
       "Gracias por tu visita, si te gusta no dudes en tomarla como inspiración, aunque se agradece una mencion si lo haces."
     }
+  },
+  "en_EN":{
+
+    "home": {
+      "aboutMeText": [
+        "I was born in 1982, I have spent the last 20 years as a designer focused especially on creating brands, and a few years ago I started a personal project related to and looking for ways to make a web, and as an occasional thing, I had my first contact with programming, in a Initially, I didn't expect it to attract me, but the more I investigated, the more it attracted me and I wanted to know more. I went from not having felt interest in programming to wanting to know as much as possible, something that remains for quite some time later, so I decided to dedicate myself completely thereto.",
+        
+        "I have always been a big fan of games like Dark Souls, Sekiro, Elden ring or similar, I think they have contributed a lot to my vision of things, they are games known for their difficulty, but I like to see them as a way of analyze and see different points of view to face the same challenge, I say this because when you face a 'Boss' of the game, at first they seem impossible, but you learn to see their attacks to have the patience to see how and in What moment can you attack and thus be able to overcome it, it also helps to manage frustration."
+      ],
+      "footer":
+      "Thank you for your visit, if you like it, feel free to take it as inspiration, although a mention is appreciated if you do so"
+    }
   }
 }

@@ -1,10 +1,17 @@
+import { LangContext } from 'context/LangContext'
 import Image from 'next/image'
-import React from 'react'
+import React, { useContext } from 'react'
 
-const LanguageButton = ({ lang }) => {
+const LanguageButton = () => {
+  const { lang, setLang } = useContext(LangContext)
+  console.log('En languageButton => ', { lang })
   return (
-    <button>
-      {lang ? (
+    <button
+      onClick={() => {
+        lang === 'es-ES' ? setLang('en-EN') : setLang('es-ES')
+      }}
+    >
+      {lang == 'es-ES' ? (
         <Image
           src='/img_static/icons/en-Icon.webp'
           alt='Icono idioma en ingles'

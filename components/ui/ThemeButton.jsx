@@ -1,6 +1,6 @@
 import DarkIcon from 'components/icons/Dark-icon'
 import LightTheme from 'components/icons/Light-icon'
-import { ThemeContext } from 'context/userContext'
+import { ThemeContext } from 'context/ThemeContext'
 import React, { useContext } from 'react'
 
 const ThemeButton = () => {

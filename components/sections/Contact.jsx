@@ -1,8 +1,12 @@
-import React from 'react'
+import { LangContext } from 'context/LangContext'
+import React, { useContext } from 'react'
 import style from 'src/styles/Contact.module.css'
 import uiWeb from '../../data/uiWeb.json'
 
 const Contact = ({ dialog }) => {
+  const { lang } = useContext(LangContext)
+  const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
+
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log({ event })
@@ -13,36 +17,34 @@ const Contact = ({ dialog }) => {
   }
   return (
     <section className={style.contactContainer}>
-      <h1 className={style.contactTitle}>{uiWeb.es_ES.contact.titles}</h1>
+      <h1 className={style.contactTitle}>{UiLang.contact.titles}</h1>
       <form onSubmit={handleSubmit} className={style.contactForm}>
         <label className={style.contactLabel}>
-          {uiWeb.es_ES.contact.form.name}
+          {UiLang.contact.form.name}
           <input
             name='name'
             className={style.contactInput}
-            placeholder={uiWeb.es_ES.contact.form.placeHolderName}
+            placeholder={UiLang.contact.form.placeHolderName}
           />
         </label>
         <label className={style.contactLabel}>
-          {uiWeb.es_ES.contact.form.email}
+          {UiLang.contact.form.email}
           <input
             type='email'
             name='email'
             className={style.contactInput}
-            placeholder={uiWeb.es_ES.contact.form.placeHolderEmail}
+            placeholder={UiLang.contact.form.placeHolderEmail}
           />
         </label>
         <label className={style.contactLabel}>
-          {uiWeb.es_ES.contact.form.question}
+          {UiLang.contact.form.question}
           <textarea
             name='question'
             className={style.contactTextArea}
-            placeholder={uiWeb.es_ES.contact.form.placeHolderQuestion}
+            placeholder={UiLang.contact.form.placeHolderQuestion}
           />
         </label>
-        <button className={style.btnSend}>
-          {uiWeb.es_ES.contact.buttons.send}
-        </button>
+        <button className={style.btnSend}>{UiLang.contact.buttons.send}</button>
       </form>
       <button
         type='submit'

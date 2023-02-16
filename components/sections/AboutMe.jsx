@@ -1,10 +1,14 @@
-import infoWebES from '../../data/infoWeb.json'
-import React from 'react'
-
+import infoWeb from '../../data/infoWeb.json'
+import React, { useContext } from 'react'
 import style from 'src/styles/AboutMe.module.css'
-import uiWebES from '../../data/uiWeb.json'
+import uiWeb from '../../data/uiWeb.json'
+import { LangContext } from 'context/LangContext'
 
 const AboutMe = () => {
+  const { lang } = useContext(LangContext)
+  const InfoLang = lang === 'es-ES' ? infoWeb.es_ES : infoWeb.en_EN
+  const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
+
   return (
     <section id='aboutme' className={style.aboutContainer}>
       <picture className={style.aboutImage}>
@@ -15,10 +19,10 @@ const AboutMe = () => {
       </picture>
       <article className={style.AboutTextContainer}>
         <header className={style.AboutTextTitle}>
-          <h2>{uiWebES.es_ES.home.titles.aboutMe}</h2>
+          <h2>{UiLang.home.titles.aboutMe}</h2>
         </header>
         <main className={style.aboutTextGroup}>
-          {infoWebES.es_ES.home.aboutMeText.map((el, id) => (
+          {InfoLang.home.aboutMeText.map((el, id) => (
             <p key={id}>{el}</p>
           ))}
         </main>

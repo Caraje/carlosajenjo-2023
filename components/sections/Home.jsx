@@ -5,7 +5,7 @@ import style from 'src/styles/Home.module.css'
 import photoCarlos from '../../public/img_static/carlosFoto.webp'
 import uiWebES from '../../data/uiWeb.json'
 import Contact from './Contact'
-import { ThemeContext } from 'context/userContext'
+import { ThemeContext } from 'context/ThemeContext'
 
 export const HomeSection = () => {
   const dialog = useRef(null)

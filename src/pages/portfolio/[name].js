@@ -1,12 +1,17 @@
 import MainLayout from 'components/layout/Main-layout'
 import Image from 'next/image'
 import style from 'src/styles/WorkPage.module.css'
-import uiWebES from '../../../data/uiWeb.json'
+import uiWeb from '../../../data/uiWeb.json'
 import infoWorks from '../../../data/infoWorks.json'
+import { useContext } from 'react'
+import { LangContext } from 'context/LangContext'
 
 const WorkPage = ({ work, isMobile }) => {
   const { id, title, img, description, techList, urlGit, urlDemo, images } =
     work[0]
+
+  const { lang } = useContext(LangContext)
+  const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
 
   return (
     <div className={style.workBackground}>
@@ -39,7 +44,7 @@ const WorkPage = ({ work, isMobile }) => {
               <aside className={style.addInfo}>
                 <section className={style.seccTec}>
                   <h3 className={style.seccTecTitle}>
-                    {uiWebES.es_ES.workPage.titles.tecnologies}
+                    {UiLang.workPage.titles.tecnologies}
                   </h3>
                   <ol className={style.seccTecList}>
                     {techList.map((tec, id) => (
@@ -51,12 +56,12 @@ const WorkPage = ({ work, isMobile }) => {
                 </section>
                 <nav className={style.navButtons}>
                   <a href={urlDemo} target='_blank' rel='noreferrer'>
-                    {uiWebES.es_ES.workPage.buttons.demo}
+                    {UiLang.workPage.buttons.demo}
                   </a>
                   <a href={urlGit} target='_blank' rel='noreferrer'>
-                    {uiWebES.es_ES.workPage.buttons.github}
+                    {UiLang.workPage.buttons.github}
                   </a>
-                  <a href='/portfolio'>{uiWebES.es_ES.workPage.buttons.back}</a>
+                  <a href='/portfolio'>{UiLang.workPage.buttons.back}</a>
                 </nav>
               </aside>
             </section>

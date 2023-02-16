@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from 'src/styles/FooterWeb.module.css'
 import Image from 'next/image'
 import SocialNetworks from 'components/ui/SocialNetworks'
-import infoWebES from '../../data/infoWeb.json'
+import infoWeb from '../../data/infoWeb.json'
+import { LangContext } from 'context/LangContext'
 
 const FooterWeb = () => {
+  const { lang } = useContext(LangContext)
+  const infoWebLang = lang === 'es-ES' ? infoWeb.es_ES : infoWeb.en_EN
   return (
     <footer className={style.footerWeb}>
       <section className={style.containerFooter}>
@@ -20,7 +23,7 @@ const FooterWeb = () => {
           />
         </div>
       </section>
-      <div className={style.footerText}>{infoWebES.es_ES.home.footer}</div>
+      <div className={style.footerText}>{infoWebLang.home.footer}</div>
     </footer>
   )
 }
