@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from 'src/styles/PortfolioCard.module.css'
 
 const PortfolioCard = ({ card }) => {
