@@ -6,11 +6,11 @@ import { ThemeContext } from 'context/userContext'
 import { useContext, useEffect } from 'react'
 
 export default function Home() {
-  const { theme, setTheme } = useContext(ThemeContext)
-  console.log(theme)
-  useEffect(() => {
-    document.body.setAttribute('data-theme', theme)
-  }, [theme])
+  // const { theme, setTheme } = useContext(ThemeContext)
+  // console.log(theme)
+  // useEffect(() => {
+  //   document.body.setAttribute('data-theme', theme)
+  // }, [theme])
 
   return (
     <>
