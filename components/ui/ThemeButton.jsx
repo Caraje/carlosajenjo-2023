@@ -5,8 +5,7 @@ import React, { useContext } from 'react'
 
 const ThemeButton = () => {
   const { theme, setTheme } = useContext(ThemeContext)
-  console.log(theme)
-
+  
   return (
     <button
       onClick={() => {
