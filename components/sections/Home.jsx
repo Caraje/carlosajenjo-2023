@@ -21,7 +21,11 @@ export const HomeSection = () => {
             </h1>
 
             <section className={style.homeSocialNetworksGroup}>
-              {<SocialNetworks color={theme ? '#2d2d2d' : '#ededed'} />}
+              {
+                <SocialNetworks
+                  color={theme === 'dark' ? '#ededed' : '#2d2d2d'}
+                />
+              }
             </section>
 
             <button

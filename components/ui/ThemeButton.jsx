@@ -10,10 +10,15 @@ const ThemeButton = () => {
   return (
     <button
       onClick={() => {
-        setTheme(!theme)
+        theme === 'dark' ? setTheme('light') : setTheme('dark')
+        // setTheme(!theme)
       }}
     >
-      {theme ? <DarkIcon color='#ed1e79' /> : <LightTheme color='#ed1e79' />}
+      {theme === 'dark' ? (
+        <LightTheme color='#ed1e79' />
+      ) : (
+        <DarkIcon color='#ed1e79' />
+      )}
     </button>
   )
 }
