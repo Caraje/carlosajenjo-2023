@@ -89,8 +89,27 @@
   transition: all .3s ease-in-out;
 }
 
+
+
+.btnDisabled {
+  background-color: var(--shadowBox);
+  border-radius: 15px;
+  line-height: 0;
+  padding: 1.2rem;
+  width: 100%;
+  align-self: flex-end;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all .3s ease-in-out;
+}
+
 @media (min-width: 764px) {
   .btnSend{
+    width: fit-content;
+
+  }
+  .btnDisabled{
     width: fit-content;
 
   }
@@ -119,4 +138,37 @@
   transform: scale(1.1);
   filter: brightness(1.2);
 
+}
+
+
+.msgSucess {
+
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: green;
+  color: var(--textButton);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+
+.msgFailed {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: red;
+  color: var(--textButton);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 15px;
 }

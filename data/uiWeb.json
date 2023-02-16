@@ -50,6 +50,10 @@
       "placeHolderEmail": "Carlos@correo.com",
       "question" : "Haga su pregunta:",
       "placeHolderQuestion": "Me interesaria hacerle una consulta sobre ..."
+    },
+    "response": {
+      "success" : "Consulta Enviada",
+      "failed" : "No se ha podido enviar su consulta"
     }
   }
 },"en_EN":{
@@ -104,6 +108,10 @@
       "placeHolderEmail": "Carlos@mail.com",
       "question" : "Ask your question:",
       "placeHolderQuestion": "I would be interested in asking you about..."
+    },    
+    "response": {
+      "success" : "Inquiry Sent",
+      "failed" : "Could not send your inquiry"
     }
   }
 }
