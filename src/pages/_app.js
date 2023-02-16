@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState()
   const [lang, setLang] = useState('es_ES')
 
+  // TEMA DE COLOR
   useEffect(() => {
     const themeLocal = localStorage.getItem('theme')
     if (themeLocal) {
@@ -17,13 +18,24 @@ export default function App({ Component, pageProps }) {
     const isDark = window.matchMedia('(prefers-color-scheme: dark)')
     isDark.matches ? setTheme('dark') : setTheme('light')
   }, [])
+
   useEffect(() => {
     document.body.setAttribute('data-theme', theme)
     localStorage.setItem('theme', theme)
   }, [theme])
+
+  // Seleccion de lenguaje
+  useEffect(() => {
+    const langSistem = window.navigator.language
+    const langLocal = localStorage.getItem('language')
+    if (langLocal) return setLang(langLocal)
+
+    langSistem === 'es-ES' ? setLang('es-ES') : setLang('en-EN')
+  }, [])
+
   useEffect(() => {
     document.body.setAttribute('lang', lang)
-    // localStorage.setItem('theme', theme)
+    localStorage.setItem('language', lang)
   }, [lang])
 
   return (
