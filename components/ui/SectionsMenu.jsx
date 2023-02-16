@@ -1,8 +1,12 @@
-import React from 'react'
-import { sections } from 'utils/sections'
+import { LangContext } from 'context/LangContext'
+import React, { useContext } from 'react'
+import uiWeb from '../../data/uiWeb.json'
 
 const SectionsMenu = ({ setIsOpen }) => {
-  return sections.map((sec) => {
+  const { lang } = useContext(LangContext)
+  const uiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
+
+  return uiLang.sections.map((sec) => {
     return (
       <a
         onClick={() => {
