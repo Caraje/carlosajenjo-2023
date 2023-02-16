@@ -4,7 +4,6 @@ import React, { useContext } from 'react'
 
 const LanguageButton = () => {
   const { lang, setLang } = useContext(LangContext)
-  console.log('En languageButton => ', { lang })
   return (
     <button
       onClick={() => {
