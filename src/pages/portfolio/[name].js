@@ -6,12 +6,12 @@ import infoWorks from '../../../data/infoWorks.json'
 import { useContext } from 'react'
 import { LangContext } from 'context/LangContext'
 
-const WorkPage = ({ work, isMobile }) => {
-  const { id, title, img, description, techList, urlGit, urlDemo, images } =
-    work[0]
-
+const WorkPage = ({ workES, workEN, isMobile }) => {
   const { lang } = useContext(LangContext)
+  const { title, img, description, techList, urlGit, urlDemo, images } =
+    lang === 'es-ES' ? workES[0] : workEN[0]
   const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
+  const worksLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
 
   return (
     <div className={style.workBackground}>
@@ -79,21 +79,26 @@ export const getStaticPaths = async (ctx) => {
   )
   return {
     paths: worksNames.map((name) => ({
-      params: { name },
+      params: { name }
     })),
-    fallback: 'blocking',
+    fallback: 'blocking'
   }
 }
 
 export const getStaticProps = async ({ params }) => {
   const { name } = params
-  const work = infoWorks.es_ES.filter((work) => {
+  const workES = infoWorks.es_ES.filter((work) => {
+    const data = work.title.toLocaleLowerCase().replaceAll(' ', '-')
+    return data === name
+  })
+  const workEN = infoWorks.en_EN.filter((work) => {
     const data = work.title.toLocaleLowerCase().replaceAll(' ', '-')
     return data === name
   })
 
+  console.log({ workES, workEN })
   return {
-    props: { work },
+    props: { workES, workEN }
   }
 }
 export default WorkPage

@@ -1,6 +1,7 @@
 .workBackground{
   background-image: var(--background);
   background-size: cover;  
+  min-height: 100vh;
 }
 
 .workContainer {
@@ -11,7 +12,7 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 10rem;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
   filter:(drop-shadow(0 0 15px rgba(76, 76, 76, .2)));
 }
 
