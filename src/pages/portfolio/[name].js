@@ -11,7 +11,6 @@ const WorkPage = ({ workES, workEN, isMobile }) => {
   const { title, img, description, techList, urlGit, urlDemo, images } =
     lang === 'es-ES' ? workES[0] : workEN[0]
   const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
-  const worksLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
 
   return (
     <div className={style.workBackground}>
@@ -95,8 +94,6 @@ export const getStaticProps = async ({ params }) => {
     const data = work.title.toLocaleLowerCase().replaceAll(' ', '-')
     return data === name
   })
-
-  console.log({ workES, workEN })
   return {
     props: { workES, workEN }
   }
