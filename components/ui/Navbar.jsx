@@ -1,14 +1,16 @@
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import style from 'src/styles/Navbar.module.css'
 import Menu from './Menu'
 import menuIcon from '../../public/img_static/icons/menu_icon.svg'
 import logo from '../../public/img_static/logos/logo-dark.svg'
 import Contact from 'components/sections/Contact'
+import { MenuContext } from 'context/MenuContext'
 
 const Navbar = ({ theme, lang, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const dialog = useRef(null)
+  // const dialog = useRef(null)
+  const { dialog } = useContext(MenuContext)
 
   return (
     <>

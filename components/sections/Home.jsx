@@ -6,10 +6,12 @@ import photoCarlos from '../../public/img_static/carlosFoto.webp'
 import uiWebES from '../../data/uiWeb.json'
 import Contact from './Contact'
 import { ThemeContext } from 'context/ThemeContext'
+import { MenuContext } from 'context/MenuContext'
 
 export const HomeSection = () => {
-  const dialog = useRef(null)
+  // const dialog = useRef(null)
   const { theme, setTheme } = useContext(ThemeContext)
+  const { dialog } = useContext(MenuContext)
 
   return (
     <>
@@ -48,9 +50,6 @@ export const HomeSection = () => {
           </picture>
         </section>
       </main>
-      <dialog ref={dialog}>
-        <Contact dialog={dialog} />
-      </dialog>
     </>
   )
 }

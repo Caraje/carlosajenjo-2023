@@ -1,12 +1,14 @@
 import '@/styles/globals.css'
 import '@/styles/customProperties.css'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ThemeContext } from 'context/ThemeContext'
 import { LangContext } from 'context/LangContext'
+import { MenuContext } from 'context/MenuContext'
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState()
   const [lang, setLang] = useState('es_ES')
+  const dialog = useRef(null)
 
   // TEMA DE COLOR
   useEffect(() => {
@@ -41,7 +43,9 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <LangContext.Provider value={{ lang, setLang }}>
-        <Component {...pageProps} />
+        <MenuContext.Provider value={{ dialog }}>
+          <Component {...pageProps} />
+        </MenuContext.Provider>
       </LangContext.Provider>
     </ThemeContext.Provider>
   )

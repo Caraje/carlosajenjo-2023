@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import SectionsMenu from 'components/ui/SectionsMenu'
 import ThemeButton from 'components/ui/ThemeButton'
 import LanguageButton from 'components/ui/LanguageButton'
 import mobile from 'src/styles/MenuSectionsMobile.module.css'
 import desktop from 'src/styles/MenuSections.module.css'
+import { MenuContext } from 'context/MenuContext'
 
-const Menu = ({ theme, lang, setIsOpen, isMobile, dialog }) => {
+const Menu = ({ theme, lang, setIsOpen, isMobile }) => {
+  const { dialog } = useContext(MenuContext)
+
   return (
     <section
       className={isMobile ? mobile.menuMobileContainer : desktop.menuContainer}
