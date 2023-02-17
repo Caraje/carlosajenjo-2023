@@ -8,9 +8,8 @@ import Contact from 'components/sections/Contact'
 import { MenuContext } from 'context/MenuContext'
 
 const Navbar = ({ theme, lang, isMobile }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  // const dialog = useRef(null)
-  const { dialog } = useContext(MenuContext)
+  // const [isOpen, setIsOpen] = useState(false)
+  const { dialog, isOpen, setIsOpen } = useContext(MenuContext)
 
   return (
     <>
@@ -39,7 +38,6 @@ const Navbar = ({ theme, lang, isMobile }) => {
                 theme={theme}
                 lang={lang}
                 isMobile={false}
-                setIsOpen={setIsOpen}
                 dialog={dialog}
               />
             </section>

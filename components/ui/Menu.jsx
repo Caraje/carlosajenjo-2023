@@ -6,17 +6,18 @@ import mobile from 'src/styles/MenuSectionsMobile.module.css'
 import desktop from 'src/styles/MenuSections.module.css'
 import { MenuContext } from 'context/MenuContext'
 
-const Menu = ({ theme, lang, setIsOpen, isMobile }) => {
-  const { dialog } = useContext(MenuContext)
+const Menu = ({ theme, lang, isMobile }) => {
+  const { dialog, isOpen, setIsOpen } = useContext(MenuContext)
 
   return (
     <section
       className={isMobile ? mobile.menuMobileContainer : desktop.menuContainer}
     >
       <nav className={isMobile ? mobile.menu : desktop.menu}>
-        {<SectionsMenu setIsOpen={setIsOpen} />}
+        {<SectionsMenu />}
         <button
           onClick={() => {
+            setIsOpen(!isOpen)
             dialog.current.showModal()
           }}
         >

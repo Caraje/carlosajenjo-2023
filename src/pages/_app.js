@@ -8,6 +8,7 @@ import { MenuContext } from 'context/MenuContext'
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState()
   const [lang, setLang] = useState('es_ES')
+  const [isOpen, setIsOpen] = useState(false)
   const dialog = useRef(null)
 
   // TEMA DE COLOR
@@ -43,7 +44,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <LangContext.Provider value={{ lang, setLang }}>
-        <MenuContext.Provider value={{ dialog }}>
+        <MenuContext.Provider value={{ dialog, isOpen, setIsOpen }}>
           <Component {...pageProps} />
         </MenuContext.Provider>
       </LangContext.Provider>
