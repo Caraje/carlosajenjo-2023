@@ -5,10 +5,14 @@ import LanguageButton from 'components/ui/LanguageButton'
 import mobile from 'src/styles/MenuSectionsMobile.module.css'
 import desktop from 'src/styles/MenuSections.module.css'
 import { MenuContext } from 'context/MenuContext'
+import uiWeb from '../../data/uiWeb.json'
+import { LangContext } from 'context/LangContext'
 
-const Menu = ({ theme, lang, isMobile }) => {
+const Menu = ({ theme, isMobile }) => {
+  const { lang } = useContext(LangContext)
+
   const { dialog, isOpen, setIsOpen } = useContext(MenuContext)
-
+  const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
   return (
     <section
       className={isMobile ? mobile.menuMobileContainer : desktop.menuContainer}
@@ -17,11 +21,11 @@ const Menu = ({ theme, lang, isMobile }) => {
         {<SectionsMenu />}
         <button
           onClick={() => {
-            setIsOpen(!isOpen)
+            setIsOpen(false)
             dialog.current.showModal()
           }}
         >
-          Contacto
+          {UiLang.home.buttons.contact}
         </button>
       </nav>
       <div className={isMobile ? mobile.selections : desktop.selections}>
