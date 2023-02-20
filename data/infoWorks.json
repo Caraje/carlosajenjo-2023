@@ -3,7 +3,8 @@
   {  
     "id" : 1,
     "title" : "GifApp",
-    "img" : "/t2nivwrhu62rbueewpw6.webp", 
+    "imgCard" : "/gr8nvgkv2mkucby7f1tf.webp", 
+    "imgBanner": "/mlyhal9ji72hbl5qk0jz.webp",
     "description" : ["Es un buscador de gifs animados, usando la api de Giphy, se puede usar el buscador para introducir los términos de lo que deseas buscar, además en la entrada de la app, sale una relación de categorías fijas y que van conectado con la api para sacar gifs relacionados con estas categorías.",
 
     "La aplicación está creada usando React y su fin era la de practicar con la conexión a APIs externas y cómo manipular los resultados dentro de mi Frontend.",
@@ -19,7 +20,8 @@
   {  
     "id" : 2,
     "title" : "Emparejados",
-    "img" : "/auqtu0crizjjpdr1gdok.webp", 
+    "imgCard" : "/lzjcidjflbjqovpdtpdi.webp", 
+    "imgBanner": "/xzw5lpexugndylqjug0e.webp",
     "description" : ["Una versión del popular juego de cartas “Memory”, donde el jugador deberá encontrar parejas dentro de un número determinado de cartas, una vez que el jugador revela todas las parejas disponibles el juego termina.",
 
     "Está creado usando React con la intención de practicar la comunicación entre componentes y el uso del “state”, además este proyecto supuso mi primer contacto con “SASS” del cual también tenía interés de comprobar su funcionamiento.",
@@ -35,7 +37,8 @@
   {  
     "id" : 3,
     "title" : "BlackJack",
-    "img" : "/ceka0a1zgyb3xawgjg0r.webp", 
+    "imgCard" : "/upo8icygvbkctgkkwblx.webp", 
+    "imgBanner": "/twsirahvubo3ihkmthtc.webp",
     "description" : ["Una versión del juego de cartas BlackJack, donde el jugador tiene que ir pidiendo cartas en este caso a la máquina, con la finalidad de sumar 21 puntos, siempre sin pasarse, posteriormente la CPU, en su turno procede a hacer lo mismo y aquel que iguale o se quede más cerca de los 21 puntos sin pasarse gana la ronda.",
 
     "Fue quizá mi primera práctica personal, realizada únicamente con HTML, CSS y JavaScript, por lo que es un poco especial para mi pese a su simpleza de cara al código, sin embargo me permitió explorar el uso de JavaScript y el uso de DOM.",
@@ -51,7 +54,8 @@
   {  
     "id" : 4,
     "title" : "TodoApp",
-    "img" : "/sealfwyokrnpk8pxvnsy.webp", 
+    "imgCard" : "/nqpemceost1j3ftviup2.webp", 
+    "imgBanner": "/ug0sjmoolkvhh5qmliaf.webp",
     "description" : ["Uno de mis primeros proyectos de aprendizaje que realicé cuando empecé en el mundo de la programación, la idea era realizar un proyecto únicamente haciendo uso de JavaScript, sin usar otras tecnologías adicionales.",
 
     "Es una aplicación de tareas que permite al usuario crear nuevas tareas, marcarlas y desmarcar las completadas, así como poder eliminarlas las completadas.",
@@ -67,7 +71,8 @@
   {  
     "id" : 5,
     "title" : "CarlosAjenjo(V1)",
-    "img" : "/s4c4sspsobszujubwzc0.webp", 
+    "imgCard" : "/hxw3wiei0zebavhagqri.webp", 
+    "imgBanner": "/j5j9anjoaemf6zwjppsg.webp",
     "description" : ["Es el proyecto de la que fue mi primera web personal, antes de esta que está disponible actualmente, fue creada con React como forma de practicar con esta tecnología.",
 
     "Fue un proyecto sencillo pero que me permitió aprender mucho, por eso me gusta conservarla, más por motivos sentimentales que prácticos.",
@@ -83,7 +88,8 @@
   {  
     "id" : 6,
     "title" : "Calendario",
-    "img" : "/wso5qaeiy5wnyablelsz.webp", 
+    "imgCard" : "/yzodgnswbc9ei2jtdqbv.webp", 
+    "imgBanner": "/g1ih6hzujqh5ippvx8sp.webp",
     "description" : ["La aplicación es un calendario donde varios usuarios pueden ir anotando diferentes tareas de algún proyecto en el que puedan estar trabajando juntos, es quizás el proyecto más elaborado que he publicado en esta web.",
 
     "Está creada usando React, y además gestiona el uso de varios usuarios, así como los permisos de estos, también hace uso del context.",
@@ -99,7 +105,8 @@
   {  
     "id" : 7,
     "title" : "Pokemon",
-    "img" : "/tf0rkvrwx7g3vitlriwe.webp", 
+    "imgCard" : "/gcodwhundnricapavuyu.webp", 
+    "imgBanner": "/fuy23xnksszumlsttp82.webp",
     "description" : [ "Es una aplicación simple para explorar el uso de Next.js, es un catálogo de diferentes Pokemons que se extraen de una API. y se muestra el listado completo con un par de datos extraídos de la misma API.",
 
     "La aplicación además permite guardar un listado de Pokemons favoritos y poder consultarlos cuando quieras, aunque la intención de la aplicación es la de aprender el manejo de Next.js y del “Static Props” y “static Paths”"],
@@ -113,7 +120,8 @@
   {  
     "id" : 8,
     "title" : "Dados y Pixeles",
-    "img" : "/x21s64aayabndq2jmvwk.webp", 
+    "imgCard" : "/nsxtws4j4ezyyksmhuf9.webp", 
+    "imgBanner": "/pvp2j81yxy8rdhq7fplp.webp",
     "description" : ["Es una web centrada en series, juegos de mesa, cine y videojuegos, que nació como un proyecto personal de amigos, un lugar donde poder escribir y hablar sobre algunos de sus hobbies habituales.",
 
     "Se trata de una versión preliminar del proyecto, mientras se prepara un proyecto más complejo y con más características, sin embargo, para el inicio del proyecto la prioridad era poder subir los artículos de forma fácil y rápida, por eso opte por usar Next.js y subir los artículos desde archivos Markdown.",
@@ -129,7 +137,8 @@
   {  
     "id" : 9,
     "title" : "Answer for Developers",
-    "img" : "/nqkm06rb0davzpbvtbq8.webp", 
+    "imgCard" : "/o1cjrkakkhe1nusoo2dz.webp", 
+    "imgBanner": "/rxmmd7ugwesfxz0cjzmp.webp",
     "description" : ["Este proyecto fue creado para el Hackathon de Enero 2023 organizado por Midudev. Fue desarrollado con la tecnología de Inteligencia Artificial de Co:here.",
 
     "La propuesta consiste en que los usuarios puedan hacer preguntas sobre desarrollo web a la aplicación y recibir respuestas generadas por la IA de Co:here, basadas en su aprendizaje. Cuanto más detallada sea la pregunta, más clara será la respuesta generada."],
@@ -145,7 +154,8 @@
   {  
     "id" : 1,
     "title" : "GifApp",
-    "img" : "/t2nivwrhu62rbueewpw6.webp", 
+    "imgCard" : "/gr8nvgkv2mkucby7f1tf.webp", 
+    "imgBanner": "/mlyhal9ji72hbl5qk0jz.webp",
     "description" : ["It is a search engine for animated gifs, using the Giphy api, you can use the search engine to enter the terms of what you want to search, also at the entrance of the app, there is a list of fixed categories and that are connected with the api to get gifs related to these categories.",
 
     "The application is created using React and its purpose was to practice with the connection to external APIs and how to manipulate the results within my Frontend.", "The application is created using React and its purpose was to practice with the connection to external APIs and how to manipulate the results within my Frontend.",
@@ -161,7 +171,8 @@
   {  
     "id" : 2,
     "title" : "Emparejados",
-    "img" : "/auqtu0crizjjpdr1gdok.webp", 
+    "imgCard" : "/lzjcidjflbjqovpdtpdi.webp", 
+    "imgBanner": "/xzw5lpexugndylqjug0e.webp",
     "description" : ["A version of the popular card game 'Memory', where the player must find pairs within a given number of cards, once the player reveals all the available pairs the game ends.", "It is created using React with the intention of practicing communication between components and the use of 'state'",
 
     "It is created using React with the intention of practicing the communication between components and the use of 'state', also this project was my first contact with 'SASS' of which I was also interested in testing its operation.",
@@ -177,7 +188,8 @@
   {  
     "id" : 3,
     "title" : "BlackJack",
-    "img" : "/ceka0a1zgyb3xawgjg0r.webp", 
+    "imgCard" : "/upo8icygvbkctgkkwblx.webp", 
+    "imgBanner": "/twsirahvubo3ihkmthtc.webp",
     "description" : ["A version of the card game BlackJack, where the player has to go asking cards in this case to the machine, in order to add 21 points, always without going over, then the CPU, in turn proceeds to do the same and the one who equals or stays closer to 21 points without going over wins the round.",
 
     "It was perhaps my first personal practice, done only with HTML, CSS and JavaScript, so it's a bit special to me despite its simplicity in the face of code, however it allowed me to explore the use of JavaScript and the use of DOM.",
@@ -193,7 +205,8 @@
   {  
     "id" : 4,
     "title" : "TodoApp",
-    "img" : "/sealfwyokrnpk8pxvnsy.webp", 
+    "imgCard" : "/nqpemceost1j3ftviup2.webp", 
+    "imgBanner": "/ug0sjmoolkvhh5qmliaf.webp",
     "description" : ["One of my first learning projects I did when I started in the programming world, the idea was to make a project only using JavaScript, without using other additional technologies.",
 
     "It is a task application that allows the user to create new tasks, mark and unmark the completed ones, as well as being able to delete the completed ones.",
@@ -209,7 +222,8 @@
   {  
     "id" : 5,
     "title" : "CarlosAjenjo(V1)",
-    "img" : "/s4c4sspsobszujubwzc0.webp", 
+    "imgCard" : "/hxw3wiei0zebavhagqri.webp", 
+    "imgBanner": "/j5j9anjoaemf6zwjppsg.webp",
     "description" : ["It is the project of what was my first personal website, before this one that is currently available, it was created with React as a way to practice with this technology.",
 
     "It was a simple project but one that allowed me to learn a lot, that's why I like to keep it, more for sentimental reasons than practical ones.",
@@ -225,7 +239,8 @@
   {  
     "id" : 6,
     "title" : "Calendario",
-    "img" : "/wso5qaeiy5wnyablelsz.webp", 
+    "imgCard" : "/yzodgnswbc9ei2jtdqbv.webp", 
+    "imgBanner": "/g1ih6hzujqh5ippvx8sp.webp",
     "description" : ["The application is a calendar where several users can write down different tasks of a project in which they can be working together, it is perhaps the most elaborate project I have published on this website",
 
     "It is created using React, and it also manages the use of several users, as well as the permissions of these, it also makes use of context.",
@@ -241,7 +256,8 @@
   {  
     "id" : 7,
     "title" : "Pokemon",
-    "img" : "/tf0rkvrwx7g3vitlriwe.webp", 
+    "imgCard" : "/gcodwhundnricapavuyu.webp", 
+    "imgBanner": "/fuy23xnksszumlsttp82.webp",
     "description" : [ "It is a simple application to explore the use of Next.js, it is a catalog of different Pokemons that are extracted from an API. and it shows the complete list with a couple of data extracted from the same API.",
 
     "The application also allows you to save a list of favorite Pokemons and be able to consult them whenever you want, although the intention of the application is to learn the handling of Next.js and the 'Static Props' and 'static Paths'."],
@@ -255,7 +271,8 @@
   {  
     "id" : 8,
     "title" : "Dados y Pixeles",
-    "img" : "/x21s64aayabndq2jmvwk.webp", 
+    "imgCard" : "/nsxtws4j4ezyyksmhuf9.webp", 
+    "imgBanner": "/pvp2j81yxy8rdhq7fplp.webp",
     "description" : ["It is a website focused on series, board games, movies and video games, which was born as a personal project of friends, a place where they can write and talk about some of their usual hobbies.",
 
     "This is a preliminary version of the project, while preparing a more complex project with more features, however, for the beginning of the project the priority was to be able to upload the articles easily and quickly, so I opted to use Next.js and upload the articles from Markdown files.",
@@ -271,7 +288,8 @@
   {  
     "id" : 9,
     "title" : "Answer for Developers",
-    "img" : "/nqkm06rb0davzpbvtbq8.webp", 
+    "imgCard" : "/o1cjrkakkhe1nusoo2dz.webp", 
+    "imgBanner": "/rxmmd7ugwesfxz0cjzmp.webp",
     "description" : ["This project was created for the January 2023 Hackathon organized by Midudev. It was developed with Co:here's AI technology.",
 
     "The proposal is that users can ask web development questions to the application and receive answers generated by Co:here's AI based on its learning. The more detailed the question, the clearer the generated answer will be."],

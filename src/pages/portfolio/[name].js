@@ -8,7 +8,7 @@ import { LangContext } from 'context/LangContext'
 
 const WorkPage = ({ workES, workEN, isMobile }) => {
   const { lang } = useContext(LangContext)
-  const { title, img, description, techList, urlGit, urlDemo, images } =
+  const { title, imgBanner, description, techList, urlGit, urlDemo, images } =
     lang === 'es-ES' ? workES[0] : workEN[0]
   const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
 
@@ -18,11 +18,11 @@ const WorkPage = ({ workES, workEN, isMobile }) => {
         <main className={style.workContainer}>
           <picture className={style.image}>
             <Image
-              src={`https://res.cloudinary.com/caraje/image/upload/v1661251659/${img}`}
+              src={`https://res.cloudinary.com/caraje/image/upload/v1676895709/carlosajenjoWeb${imgBanner}`}
               alt={`es la imagen de la cabecera del proyecto ${title}`}
               className={style.headImage}
               width={1200}
-              height={800}
+              height={900}
             />
           </picture>
           <article className={style.workInfo}>
