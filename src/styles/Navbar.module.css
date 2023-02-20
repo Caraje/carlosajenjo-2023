@@ -44,3 +44,10 @@
   height: 2rem;
   width: 2rem;
 }
+
+
+
+.dialogContact::backdrop{
+
+  backdrop-filter: blur(15px);
+}

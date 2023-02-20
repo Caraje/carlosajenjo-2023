@@ -45,7 +45,7 @@ const Navbar = ({ theme, lang, isMobile }) => {
         </div>
       </div>
       {isOpen && <Menu theme={theme} lang={lang} isMobile={true} />}
-      <dialog ref={dialog}>
+      <dialog className={style.dialogContact} ref={dialog}>
         <Contact dialog={dialog} />
       </dialog>
     </>
