@@ -48,6 +48,12 @@ const WorkPage = ({ workES, workEN, isMobile }) => {
                   <ol className={style.seccTecList}>
                     {techList.map((tec, id) => (
                       <li className={style.seccTecChip} key={id}>
+                        <Image
+                          src={`/img_static/tec/${tec}.svg`}
+                          width={25}
+                          height={25}
+                          className={style.chipImage}
+                        />
                         {tec}
                       </li>
                     ))}
