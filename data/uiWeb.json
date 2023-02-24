@@ -1,114 +1,112 @@
-{"es_ES":{
-  "sections":[
-    {
-      "title": "Portfolio",
-      "url": "/portfolio"
+{
+  "es_ES": {
+    "sections": [
+      {
+        "title": "Portfolio",
+        "url": "/portfolio"
+      },
+      {
+        "title": "Sobre mi",
+        "url": "/#aboutme"
+      }
+    ],
+    "home": {
+      "buttons": {
+        "contact": "Contacto",
+        "more": "Ver más"
+      },
+      "titles": {
+        "portfolio": "Portfolio",
+        "aboutMe": "Sobre mi"
+      }
     },
-    {
-      "title": "Sobre mi",
-      "url": "/#aboutme"
-    }
-  ],
-  "home": {
-    "buttons": {
-      "contact": "Contacto",
-      "more": "Ver más"
+    "portfolioPage": {
+      "titles": {
+        "portfolio": "Portfolio"
+      }
     },
-    "titles": {
-      "portfolio": "Portfolio",
-      "aboutMe": "Sobre mi"
+    "workPage": {
+      "titles": {
+        "tecnologies": "Tecnologías"
+      },
+      "buttons": {
+        "demo": "Demo",
+        "github": "Github",
+        "back": "Volver"
+      }
+    },
+    "contact": {
+      "buttons": {
+        "send": "Enviar"
+      },
+      "titles": "Contacto",
+      "form": {
+        "name": "Nombre:",
+        "placeHolderName": "Carlos Ajenjo",
+        "email": "Correo Electronico:",
+        "placeHolderEmail": "Carlos@correo.com",
+        "question": "Haga su pregunta:",
+        "placeHolderQuestion": "Me interesaria hacerle una consulta sobre ..."
+      },
+      "response": {
+        "success": "Consulta Enviada",
+        "failed": "No se ha podido enviar su consulta"
+      }
     }
   },
-  "portfolioPage": {
-    "titles": {
-      "portfolio": "Portfolio"
-    }
-  },
-  "workPage": {
-    "titles": {
-      "tecnologies": "Tecnologías"
+  "en_EN": {
+    "sections": [
+      {
+        "title": "Portfolio",
+        "url": "/portfolio"
+      },
+      {
+        "title": "About Me",
+        "url": "/#aboutme"
+      }
+    ],
+    "home": {
+      "buttons": {
+        "contact": "Contact",
+        "more": "More"
+      },
+      "titles": {
+        "portfolio": "Portfolio",
+        "aboutMe": "About Me"
+      }
     },
-    "buttons": {
-      "demo": "Demo",
-      "github": "Github",
-      "back": "Volver"
-    }
-  },
-  "contact":{
-    "buttons": {
-      "send": "Enviar"
+    "portfolioPage": {
+      "titles": {
+        "portfolio": "Portfolio"
+      }
     },
-    "titles": "Contacto",
-    "form": {
-      "name" : "Nombre:",
-      "placeHolderName": "Carlos Ajenjo",
-      "email" : "Correo Electronico:",
-      "placeHolderEmail": "Carlos@correo.com",
-      "question" : "Haga su pregunta:",
-      "placeHolderQuestion": "Me interesaria hacerle una consulta sobre ..."
+    "workPage": {
+      "titles": {
+        "tecnologies": "Tecnologies"
+      },
+      "buttons": {
+        "demo": "Demo",
+        "github": "Github",
+        "back": "Back"
+      }
     },
-    "response": {
-      "success" : "Consulta Enviada",
-      "failed" : "No se ha podido enviar su consulta"
+    "contact": {
+      "buttons": {
+        "send": "Send"
+      },
+      "titles": "Contact",
+      "form": {
+        "name": "Name:",
+        "placeHolderName": "Carlos Ajenjo",
+        "email": "Email:",
+        "placeHolderEmail": "Carlos@mail.com",
+        "question": "Ask your question:",
+        "placeHolderQuestion": "I would be interested in asking you about..."
+      },
+      "response": {
+        "success": "Inquiry Sent",
+        "failed": "Could not send your inquiry"
+      }
     }
   }
-},"en_EN":{
-  "sections":[
-    {
-      "title": "Portfolio",
-      "url": "/portfolio"
-    },
-    {
-      "title": "About Me",
-      "url": "/#aboutme"
-    },
-    {
-      "title": "Blog",
-      "url": "/blog"
-    }
-  ],
-  "home": {
-    "buttons": {
-      "contact": "Contact",
-      "more": "More"
-    },
-    "titles": {
-      "portfolio": "Portfolio",
-      "aboutMe": "About Me"
-    }
-  },
-  "portfolioPage": {
-    "titles": {
-      "portfolio": "Portfolio"
-    }
-  },
-  "workPage": {
-    "titles": {
-      "tecnologies": "Tecnologies"
-    },
-    "buttons": {
-      "demo": "Demo",
-      "github": "Github",
-      "back": "Back"
-    }
-  },
-  "contact":{
-    "buttons": {
-      "send": "Send"
-    },
-    "titles": "Contact",
-    "form": {
-      "name" : "Name:",
-      "placeHolderName": "Carlos Ajenjo",
-      "email" : "Email:",
-      "placeHolderEmail": "Carlos@mail.com",
-      "question" : "Ask your question:",
-      "placeHolderQuestion": "I would be interested in asking you about..."
-    },    
-    "response": {
-      "success" : "Inquiry Sent",
-      "failed" : "Could not send your inquiry"
-    }
-  }
-}
 }
