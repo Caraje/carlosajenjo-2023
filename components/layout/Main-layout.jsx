@@ -20,22 +20,24 @@ const MainLayout = ({ children, language }) => {
         <link rel='icon' href='/img_static/favicon.ico' />
         <meta name='keywords' content='HTML, CSS, JavaScript' />
         <title>{lang.title}</title>
-        <meta name="description" content="Pagina web de Carlos Ajenjo, desarrollador Front-end, portfolio para mostrar algunos de los proyectos en los que he tenido la ocasion de trabajar."/>
+        <meta name='description' content={lang.description} />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.carlosajenjo.es/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Carlos Ajenjo: Front-end developer"/>
-        <meta property="og:description" content="Pagina web de Carlos Ajenjo, desarrollador Front-end, portfolio para mostrar algunos de los proyectos en los que he tenido la ocasion de trabajar."/>
-        <meta property="og:image" content="https://res.cloudinary.com/caraje/image/upload/v1661263182/cibt2p9bztdn4odwwk5j.webp"/>
+        <meta property='og:url' content={lang.url} />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content={lang.title} />
+        <meta property='og:description' content={lang.description} />
+        <meta property='og:image' content={lang.img} />
 
         {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:domain" content="carlosajenjo.es"/>
-        <meta property="twitter:url" content="https://www.carlosajenjo.es/"/>
-        <meta name="twitter:title" content="Carlos Ajenjo: Front-end developer"/>
-        <meta name="twitter:description" content="Pagina web de Carlos Ajenjo, desarrollador Front-end, portfolio para mostrar algunos de los proyectos en los que he tenido la ocasion de trabajar."/>
-        <meta name="twitter:image" content="https://res.cloudinary.com/caraje/image/upload/v1661263182/cibt2p9bztdn4odwwk5j.webp"/>
+        <meta name='twitter:card' content='summary' />
+        <meta property='twitter:domain' content='www.dadosypixeles.es' />
+        <meta name='twitter:site' content='@DadosyPixeles' />
+        <meta name='twitter:creator' content={lang.author} />
+        <meta property='twitter:url' content={lang.url} />
+        <meta name='twitter:title' content={lang.title} />
+        <meta name='twitter:description' content={lang.description} />
+        <meta name='twitter:image' content={lang.img} />
       </Head>
       <header>
         <Navbar isMobile={isMobile} />
