@@ -1,8 +1,7 @@
 {
   "title": "Carlos Ajenjo: Front-end developer",
-  "description":
-    "Web page of Carlos Ajenjo, Front-end developer, portfolio to show some of the projects in which I have had the opportunity to work.",
-  "img": "/v1661263182/cibt2p9bztdn4odwwk5j.webp",
+  "description": "Web page of Carlos Ajenjo, Front-end developer, portfolio to show some of the projects in which I have had the opportunity to work.",
+  "img": "https://res.cloudinary.com/caraje/image/upload/v1661263182/cibt2p9bztdn4odwwk5j.webp",
   "url": "https://www.carlosajenjo.es",
   "author": "@caraje_",
   "tags": "front-end, front-end developer, react, next.js, javascript, node, css, junior, portfolio"
