@@ -177,6 +177,31 @@
       "urlDemo": "https://answer-for-developers.vercel.app/",
       "urlGithub": "https://github.com/Caraje/Anwser-for-Developers",
       "images": []
+    },
+    {
+      "id": 9,
+      "title": "ReImage",
+      "imgCard": "/uzn9l2qye1spvd1zlbu4.webp",
+      "imgBanner": "/vn36lt1ie1wqtdl45sdr.webp",
+      "description": [
+        "Este proyecto fue creado para el Hackathon de febrero 2023 organizado por Midudev en conjunto con Cloudinary. Ha sido desarrollado con la tecnología de Cloudinary.",
+        "La propuesta es la de una aplicación de edición de imágenes, en la que es posible redimensionar imágenes, hacer mejoras automáticas, mejorar color, brillo, contraste y otras opciones.",
+        "Además, se ofrece la posibilidad de aplicar una serie de efectos a las imágenes, tales como un desenfoque, un pixelado o filtros de color entre otros.",
+        "La función más importante es la de poder remover el fondo de una imagen de manera automática, usando para ello tecnología de inteligencia artificial de Cloudinary."
+      ],
+      "descShort": "App de edicion de imagenes para participar en una hackathon",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite"
+      ],
+      "url": "/portfolio/ReImage",
+      "urlDemo": "https://reimage.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/reimage",
+      "images": []
     }
   ],
   "en_EN": [
@@ -358,6 +383,31 @@
       "url": "/portfolio/answer-for-developers",
       "urlDemo": "https://answer-for-developers.vercel.app/",
       "urlGithub": "https://github.com/Caraje/Anwser-for-Developers",
+      "images": []
+    },
+    {
+      "id": 9,
+      "title": "ReImage",
+      "imgCard": "/uzn9l2qye1spvd1zlbu4.webp",
+      "imgBanner": "/vn36lt1ie1wqtdl45sdr.webp",
+      "description": [
+        "This project was created for the February 2023 Hackathon organized by Midudev in conjunction with Cloudinary. It has been developed with Cloudinary technology.",
+        "The proposal is that of an image editing application, in which it is possible to resize images, make automatic improvements, improve color, brightness, contrast and other options.",
+        "In addition, it offers the possibility of applying a series of effects to the images, such as a blur, a pixelation or color filters among others.",
+        "The most important function is to be able to remove the background of an image automatically, using Cloudinary's artificial intelligence technology."
+      ],
+      "descShort": "Image editing app to participate in a hackathon",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite"
+      ],
+      "url": "/portfolio/ReImage",
+      "urlDemo": "https://reimage.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/reimage",
       "images": []
     }
   ]
