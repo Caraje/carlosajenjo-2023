@@ -8,7 +8,7 @@ import { LangContext } from 'context/LangContext'
 
 const WorkPage = ({ workES, workEN, isMobile }) => {
   const { lang } = useContext(LangContext)
-  const { title, imgBanner, description, techList, urlGit, urlDemo, images } =
+  const { title, imgBanner, description, techList, urlGithub, urlDemo, images } =
     lang === 'es-ES' ? workES[0] : workEN[0]
   const UiLang = lang === 'es-ES' ? uiWeb.es_ES : uiWeb.en_EN
 
@@ -63,7 +63,7 @@ const WorkPage = ({ workES, workEN, isMobile }) => {
                   <a href={urlDemo} target='_blank' rel='noreferrer'>
                     {UiLang.workPage.buttons.demo}
                   </a>
-                  <a href={urlGit} target='_blank' rel='noreferrer'>
+                  <a href={urlGithub} target='_blank' rel='noreferrer'>
                     {UiLang.workPage.buttons.github}
                   </a>
                   <a href='/portfolio'>{UiLang.workPage.buttons.back}</a>
