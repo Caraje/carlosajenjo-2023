@@ -13,7 +13,7 @@ const SectionsMenu = () => {
     return (
       <a
         onClick={() => {
-          setIsOpen(!isOpen)
+          setIsOpen(false)
         }}
         key={sec.title}
         href={sec.url}
