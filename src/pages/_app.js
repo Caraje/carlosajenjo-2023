@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ThemeContext } from 'context/ThemeContext'
 import { LangContext } from 'context/LangContext'
 import { MenuContext } from 'context/MenuContext'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState()
@@ -46,6 +47,7 @@ export default function App({ Component, pageProps }) {
       <LangContext.Provider value={{ lang, setLang }}>
         <MenuContext.Provider value={{ dialog, isOpen, setIsOpen }}>
           <Component {...pageProps} />
+          <Analytics />
         </MenuContext.Provider>
       </LangContext.Provider>
     </ThemeContext.Provider>
