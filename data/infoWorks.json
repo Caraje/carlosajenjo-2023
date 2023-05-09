@@ -209,7 +209,7 @@
       "imgCard": "/rq5szvt3dsb6sk9jj7dg.webp",
       "imgBanner": "/aiqgbkawbdkxulgxnsao.webp",
       "description": [
-        "Es un proyecto personal, que toma inspiracion de https://framed.wtf/, mi idea era tener una aplicación en la que diferentes usuarios puedan acceder a diferentes niveles cada dia en diferentes categorias",
+        "Es un proyecto personal, que toma inspiracion de framed.wtf, mi idea era tener una aplicación en la que diferentes usuarios puedan acceder a diferentes niveles cada dia en diferentes categorias",
         "En este proyecto ademas queria experimentar con la posibilidad de trabajar con Supabase y sus bases de datos, especialemente para poder gestionar la lista de los diferentes usuarios y sus registros",
         "Cada jugador o usuario, ademas de participar en el nivel diario, tambien podra guardar su puntuacion y comprararla con la de otros jugadores y asi poder competir por ver quien es el mejor en cada categoria",
         "La idea es seguir actualizando en el futuro el proyecto y ampliar en función de los usuarios y sus intereses"
