@@ -11,7 +11,6 @@ const PortfolioCard = ({ card }) => {
         </header>
         <main className={style.cardImage}>
           <img
-            // https://res.cloudinary.com/caraje/image/upload/v1676895710/carlosajenjoWeb/rxmmd7ugwesfxz0cjzmp.webp
             src={`https://res.cloudinary.com/caraje/image/upload/v1676895710/carlosajenjoWeb${card.imgCard}`}
             alt={`Es una imagen que hace referencia al proyecto ${card.title}`}
           />
