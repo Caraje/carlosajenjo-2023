@@ -18,7 +18,7 @@ const FooterWeb = () => {
           <Image
             src='/img_static/logos/Logo_negative.svg'
             alt='Logo Carlosajenjo.es'
-            width={500}
+            width={300}
             height={90}
           />
         </div>
