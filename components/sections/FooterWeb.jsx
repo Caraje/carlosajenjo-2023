@@ -18,12 +18,12 @@ const FooterWeb = () => {
           <Image
             src='/img_static/logos/Logo_negative.svg'
             alt='Logo Carlosajenjo.es'
-            width={300}
-            height={100}
+            width={500}
+            height={90}
           />
         </div>
       </section>
-      <div className={style.footerText}>{infoWebLang.home.footer}</div>
+      {/* <div className={style.footerText}>{infoWebLang.home.footer}</div> */}
     </footer>
   )
 }
