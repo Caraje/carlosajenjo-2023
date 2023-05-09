@@ -8,7 +8,6 @@ import Contact from 'components/sections/Contact'
 import { MenuContext } from 'context/MenuContext'
 
 const Navbar = ({ theme, lang, isMobile }) => {
-  // const [isOpen, setIsOpen] = useState(false)
   const { dialog, isOpen, setIsOpen } = useContext(MenuContext)
 
   return (
