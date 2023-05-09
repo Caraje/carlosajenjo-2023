@@ -28,6 +28,7 @@ a {
 button {
   background: none;
   border: none;
+  font-family: var(--primaryFont);
 }
 
 
