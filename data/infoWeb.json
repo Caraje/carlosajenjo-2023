@@ -1,25 +1,22 @@
 {
-  "es_ES":{
-
+  "es_ES": {
     "home": {
       "aboutMeText": [
-        "Nací en 1982 he pasado los últimos 20 años como diseñador centrado especialmente en crear marcas, y hace unos años comencé un proyecto personal relacionado y al buscar formas de hacer una web, y como algo ocasional, tuve mi primer contacto con la programación, en un inicio no esperaba que fuera atraerme, pero según investigaba más, más me atraía y quería conocer más, pase de no haber sentido interés por la programación a querer saber todo lo posible, algo que se mantiene bastante tiempo después por lo que decidí dedicarme por completo a ello.",
-        "Siempre he sido un gran fan de los juegos tipo Dark Souls, Sekiro, Elden ring o similares, creo que me han aportado mucho a mi visión de las cosas, son juegos conocidos por su dificultad, pero que me gusta verlos como una forma de analizar y ver diferentes puntos de vista para enfrentarte a un mismo reto, digo esto por que cuando te enfrentas a un “Boss” del juego, al principio te parecen imposibles, pero aprendes a ver sus ataques a tener la paciencia para ver como y en que momento puedes atacar y así poder superarlo, además ayuda a gestionar la frustración."
+        "¡Hola! Bienvenido a mi sitio web personal, donde busco mi primera oportunidad laboral como desarrollador web. A pesar de no tener experiencia profesional previa en este campo, he aumentado mi experiencia mediante la realización de proyectos personales, lo que me ha brindado la capacidad de enfrentarme por mi cuenta a retos y problemas para encontrar soluciones óptimas. También he trabajado con diferentes lenguajes y herramientas para mejorar mis habilidades en el desarrollo web.",
+        "Aunque mi experiencia laboral anterior no estuvo relacionada con la programación, mi compromiso y responsabilidad hacia mi trabajo siempre han sido la base de mi éxito en el pasado. He tenido la oportunidad de asumir puestos de responsabilidad, liderar equipos y gestionar proyectos desde el inicio hasta la finalización con excelentes resultados.",
+        "Si estás buscando un desarrollador web comprometido, apasionado y con ganas de aprender, no dudes en ponerte en contacto conmigo. ¡Estoy ansioso por conocer nuevas oportunidades para crecer y evolucionar como desarrollador web!"
       ],
-      "footer":
-      "Gracias por tu visita, si te gusta no dudes en tomarla como inspiración, aunque se agradece una mencion si lo haces."
+      "footer": "Gracias por tu visita, si te gusta no dudes en tomarla como inspiración, aunque se agradece una mencion si lo haces."
     }
   },
-  "en_EN":{
-
+  "en_EN": {
     "home": {
       "aboutMeText": [
-        "I was born in 1982, I have spent the last 20 years as a designer focused especially on creating brands, and a few years ago I started a personal project related to and looking for ways to make a web, and as an occasional thing, I had my first contact with programming, in a Initially, I didn't expect it to attract me, but the more I investigated, the more it attracted me and I wanted to know more. I went from not having felt interest in programming to wanting to know as much as possible, something that remains for quite some time later, so I decided to dedicate myself completely thereto.",
-        
-        "I have always been a big fan of games like Dark Souls, Sekiro, Elden ring or similar, I think they have contributed a lot to my vision of things, they are games known for their difficulty, but I like to see them as a way of analyze and see different points of view to face the same challenge, I say this because when you face a 'Boss' of the game, at first they seem impossible, but you learn to see their attacks to have the patience to see how and in What moment can you attack and thus be able to overcome it, it also helps to manage frustration."
+        "Hello! Welcome to my personal website, where I am seeking my first job opportunity as a web developer. Despite having no previous professional experience in this field, I have increased my expertise by completing personal projects, which have provided me with the ability to independently face challenges and problems to find optimal solutions. I have also worked with various languages and tools to improve my skills in web development.",
+        "Although my previous work experience was not related to programming, my commitment and responsibility towards my work have always been the foundation of my success in the past. I have had the opportunity to assume positions of responsibility, lead teams, and manage projects from start to finish with excellent results.",
+        "If you are looking for a committed, passionate web developer with a desire to learn, please don't hesitate to contact me. I am eager to discover new opportunities to grow and evolve as a web developer!"
       ],
-      "footer":
-      "Thank you for your visit, if you like it, feel free to take it as inspiration, although a mention is appreciated if you do so"
+      "footer": "Thank you for your visit, if you like it, feel free to take it as inspiration, although a mention is appreciated if you do so"
     }
   }
 }
