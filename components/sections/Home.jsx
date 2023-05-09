@@ -9,7 +9,6 @@ import { MenuContext } from 'context/MenuContext'
 import { LangContext } from 'context/LangContext'
 
 export const HomeSection = () => {
-  // const dialog = useRef(null)
   const { lang } = useContext(LangContext)
   const { theme, setTheme } = useContext(ThemeContext)
   const { dialog } = useContext(MenuContext)
@@ -40,15 +39,6 @@ export const HomeSection = () => {
               {UiLang.home.buttons.contact}
             </button>
           </article>
-
-          <picture className={style.HomePicture}>
-            <Image
-              className={style.photo}
-              src={photoCarlos}
-              alt='foto de carlos Ajenjo'
-              fill
-            />
-          </picture>
         </section>
       </main>
     </>
