@@ -222,7 +222,7 @@
         "React",
         "TailwindCSS",
         "Vite",
-        "Redux",
+        "redux",
         "Supabase"
       ],
       "url": "/portfolio/adivinaque",
@@ -456,8 +456,8 @@
         "React",
         "TailwindCSS",
         "Vite",
-        "reduxjs",
-        "supabase"
+        "redux",
+        "Supabase"
       ],
       "url": "/portfolio/adivinaque",
       "urlDemo": "https://adivinaque.vercel.app/",
