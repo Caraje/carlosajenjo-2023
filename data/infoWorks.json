@@ -202,6 +202,33 @@
       "urlDemo": "https://reimage.vercel.app/",
       "urlGithub": "https://github.com/Caraje/reimage",
       "images": []
+    },
+    {
+      "id": 10,
+      "title": "AdivinaQue",
+      "imgCard": "/rq5szvt3dsb6sk9jj7dg.webp",
+      "imgBanner": "/aiqgbkawbdkxulgxnsao.webp",
+      "description": [
+        "Es un proyecto personal, que toma inspiracion de https://framed.wtf/, mi idea era tener una aplicación en la que diferentes usuarios puedan acceder a diferentes niveles cada dia en diferentes categorias",
+        "En este proyecto ademas queria experimentar con la posibilidad de trabajar con Supabase y sus bases de datos, especialemente para poder gestionar la lista de los diferentes usuarios y sus registros",
+        "Cada jugador o usuario, ademas de participar en el nivel diario, tambien podra guardar su puntuacion y comprararla con la de otros jugadores y asi poder competir por ver quien es el mejor en cada categoria",
+        "La idea es seguir actualizando en el futuro el proyecto y ampliar en función de los usuarios y sus intereses"
+      ],
+      "descShort": "Juego en el que cada dia se descubrira un nuevo nivel por categoria, donde deberas adivinar de que pelicula, serie o videojuego se trata",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite",
+        "Redux",
+        "Supabase"
+      ],
+      "url": "/portfolio/adivinaque",
+      "urlDemo": "https://adivinaque.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/adivinaque",
+      "images": []
     }
   ],
   "en_EN": [
@@ -408,6 +435,33 @@
       "url": "/portfolio/ReImage",
       "urlDemo": "https://reimage.vercel.app/",
       "urlGithub": "https://github.com/Caraje/reimage",
+      "images": []
+    },
+    {
+      "id": 10,
+      "title": "AdivinaQue",
+      "imgCard": "/rq5szvt3dsb6sk9jj7dg.webp",
+      "imgBanner": "/aiqgbkawbdkxulgxnsao.webp",
+      "description": [
+        "This is a personal project inspired by framed.wtf. My idea was to create an application where different users can access different levels each day across various categories.",
+        "Additionally, I wanted to experiment with the possibility of working with Supabase and its databases, especially for managing the list of different users and their records.",
+        "Each player or user, besides participating in the daily level, can also save their score and compare it with other players, allowing them to compete to see who is the best in each category.",
+        "The plan is to continue updating the project in the future and expanding it based on users and their interests."
+      ],
+      "descShort": "A game where a new level in each category (movies, TV shows, or video games) is discovered every day, and you have to guess what it is.",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite",
+        "reduxjs",
+        "supabase"
+      ],
+      "url": "/portfolio/adivinaque",
+      "urlDemo": "https://adivinaque.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/adivinaque",
       "images": []
     }
   ]
