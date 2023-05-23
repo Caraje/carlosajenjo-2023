@@ -229,6 +229,33 @@
       "urlDemo": "https://adivinaque.vercel.app/",
       "urlGithub": "https://github.com/Caraje/adivinaque",
       "images": []
+    },
+    {
+      "id": 11,
+      "title": "GifManiac",
+      "imgCard": "/uj6ydrwjgkhafonnws14.png",
+      "imgBanner": "/buqlg7nth6esl9ft6yxa.png",
+      "description": [
+        "GifManiac es un emocionante proyecto desarrollado por mí, un apasionado web developer, y se presenta como una destacada adición a mi portafolio. Este juego interactivo está diseñado para brindar una experiencia divertida y educativa al mismo tiempo que se practican habilidades fundamentales en el desarrollo web, como el manejo de fetch y operaciones asíncronas.",
+        "Al aprovechar la potente API de Giphy, GifManiac desafía a los jugadores a adivinar el título de películas, series y videojuegos utilizando pistas visuales en forma de GIFs. Cada vez que se selecciona una categoría, se solicitan GIFs relacionados al título en cuestión, creando un desafío único y emocionante para cada usuario.",
+        "Construido con React, el proyecto aprovecha la flexibilidad y eficiencia de este framework para crear una interfaz de usuario dinámica y fluida. Además, se utiliza React Router DOM para gestionar la navegación entre diferentes componentes y garantizar una experiencia de juego sin problemas.",
+        "La combinación de Javascript, HTML y Tailwind CSS permite una implementación ágil y eficiente del diseño y la funcionalidad del juego. Los usuarios pueden disfrutar de una interfaz intuitiva y atractiva mientras participan en el desafío de adivinar títulos a partir de las pistas proporcionadas por Giphy.",
+        "GifManiac no solo es un proyecto divertido y entretenido, sino que también demuestra mis habilidades como desarrollador web al mostrar el dominio de tecnologías modernas y la capacidad de crear aplicaciones interactivas y atractivas. Espero que esta adición a mi portafolio destaque mi pasión por la programación y mi capacidad para enfrentar desafíos técnicos de manera efectiva.",
+        "¡Explora GifManiac y sumérgete en el mundo de las adivinanzas de títulos con pistas en GIFs! Descubre tus habilidades y desafíate a ti mismo mientras te diviertes explorando la amplia variedad de películas, series y videojuegos."
+      ],
+      "descShort": "¿Cuantas peliculas, series o videojuegos eres capaz de adivinar viendo gifs?",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite"
+      ],
+      "url": "/portfolio/gifmaniac",
+      "urlDemo": "https://gifmaniac.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/gifmaniac",
+      "images": []
     }
   ],
   "en_EN": [
@@ -462,6 +489,33 @@
       "url": "/portfolio/adivinaque",
       "urlDemo": "https://adivinaque.vercel.app/",
       "urlGithub": "https://github.com/Caraje/adivinaque",
+      "images": []
+    },
+    {
+      "id": 11,
+      "title": "GifManiac",
+      "imgCard": "/uj6ydrwjgkhafonnws14.png",
+      "imgBanner": "/buqlg7nth6esl9ft6yxa.png",
+      "description": [
+        "GifManiac is an exciting project developed by me, a passionate web developer, and serves as a prominent addition to my web portfolio. This interactive game is designed to provide a fun and educational experience while practicing essential web development skills such as fetch handling and asynchronous operations.",
+        "By harnessing the powerful Giphy API, GifManiac challenges players to guess the titles of movies, series, and video games using visual clues in the form of GIFs. Each time a category is selected, GIFs related to the title in question are requested, creating a unique and thrilling challenge for each user.",
+        "Built with React, the project leverages the flexibility and efficiency of this framework to create a dynamic and seamless user interface. Additionally, React Router DOM is used to manage navigation between different components, ensuring a smooth gaming experience.",
+        "The combination of Javascript, HTML, and Tailwind CSS enables agile and efficient implementation of the game's design and functionality. Users can enjoy an intuitive and visually appealing interface while engaging in the challenge of guessing titles based on the clues provided by Giphy.",
+        "GifManiac is not only a fun and entertaining project but also showcases my skills as a web developer by demonstrating mastery of modern technologies and the ability to create interactive and engaging applications. I hope this addition to my web portfolio highlights my passion for programming and my ability to effectively tackle technical challenges.",
+        "Explore GifManiac and immerse yourself in the world of title guessing with GIF clues! Discover your skills and challenge yourself while having fun exploring a wide variety of movies, series, and video games."
+      ],
+      "descShort": "How many movies, series or video games can you guess by looking at gifs?",
+      "techList": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Vite"
+      ],
+      "url": "/portfolio/gifmaniac",
+      "urlDemo": "https://gifmaniac.vercel.app/",
+      "urlGithub": "https://github.com/Caraje/gifmaniac",
       "images": []
     }
   ]
